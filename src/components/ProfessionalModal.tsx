@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+import { useBodyScrollLock } from '../hooks/useBodyScrollLock';
 import type { Professional } from '../types/content';
 
 type ProfessionalModalProps = {
@@ -17,6 +18,7 @@ export function ProfessionalModal({
   const dialogRef = useRef<HTMLDivElement | null>(null);
   const closeButtonRef = useRef<HTMLButtonElement | null>(null);
   const previouslyFocusedElementRef = useRef<HTMLElement | null>(null);
+  useBodyScrollLock(true);
 
   useEffect(() => {
     previouslyFocusedElementRef.current = document.activeElement as HTMLElement | null;
@@ -52,11 +54,9 @@ export function ProfessionalModal({
       }
     };
 
-    document.body.style.overflow = 'hidden';
     window.addEventListener('keydown', handleKeyDown);
 
     return () => {
-      document.body.style.overflow = '';
       window.removeEventListener('keydown', handleKeyDown);
       previouslyFocusedElementRef.current?.focus();
     };
