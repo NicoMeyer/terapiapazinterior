@@ -3,6 +3,8 @@ export type Specialty = {
   name: string;
   summary: string;
   highlights: string[];
+  image: string;
+  imageAlt: string;
 };
 
 export type Professional = {

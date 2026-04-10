@@ -5,16 +5,11 @@ type FinalCtaSectionProps = {
 export function FinalCtaSection({ bookingUrl }: FinalCtaSectionProps) {
   return (
     <section className="final-cta" aria-labelledby="final-cta-title">
-      <p className="final-cta__eyebrow">Primer paso</p>
-      <h2 id="final-cta-title">
-        Un espacio terapéutico puede sentirse profesional y, al mismo tiempo, profundamente humano.
-      </h2>
-      <p>
-        Si hoy buscas orientación para ti o para alguien a tu cuidado, esta SPA ya deja preparada una
-        base clara para conocer el centro y dar el siguiente paso con confianza.
-      </p>
+      <p className="final-cta__eyebrow">Siguiente paso</p>
+      <h2 id="final-cta-title">Conozcamos tu caso y orientemos el mejor punto de partida.</h2>
+      <p>Una conversación inicial puede ayudar a ordenar dudas y abrir un camino más claro.</p>
       <a className="button button--solid" href={bookingUrl} target="_blank" rel="noreferrer">
-        Ir a agendamiento
+        Agendar orientación
       </a>
     </section>
   );

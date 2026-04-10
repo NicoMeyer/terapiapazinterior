@@ -82,9 +82,13 @@ export function ProfessionalModal({
           Cerrar
         </button>
 
-        <div className="modal__media" aria-label={professional.photoAlt}>
-          <span>{professional.name.split(' ').map((part) => part[0]).slice(0, 2).join('')}</span>
-          <p>Espacio reservado para fotografía profesional</p>
+        <div className="modal__media">
+          {professional.photo ? (
+            <img src={professional.photo} alt={professional.photoAlt} loading="lazy" />
+          ) : (
+            <span>{professional.name.split(' ').map((part) => part[0]).slice(0, 2).join('')}</span>
+          )}
+          <p>Perfil referencial del equipo profesional</p>
         </div>
 
         <div className="modal__content">

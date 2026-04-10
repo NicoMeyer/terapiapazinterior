@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Acompañamiento familiar</title>
+  <desc id="desc">Placeholder visual de una sesión cálida entre una profesional y una familia.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#edf8f8" />
+      <stop offset="100%" stop-color="#d4ecef" />
+    </linearGradient>
+    <linearGradient id="sofa" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#87c7bf" />
+      <stop offset="100%" stop-color="#68b0b5" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)" />
+  <rect y="560" width="1200" height="340" fill="#dbeef0" />
+  <circle cx="980" cy="145" r="96" fill="#d3edec" />
+  <rect x="770" y="118" width="145" height="205" rx="24" fill="#f8fcfd" />
+  <rect x="812" y="158" width="60" height="122" rx="12" fill="#d6eff0" />
+  <rect x="170" y="440" width="620" height="198" rx="40" fill="url(#sofa)" />
+  <rect x="120" y="620" width="750" height="60" rx="30" fill="#d0e6e8" />
+  <circle cx="410" cy="360" r="58" fill="#f2c9b5" />
+  <path d="M330 494c22-88 142-94 170 0l8 25c10 34-15 65-50 65H380c-35 0-60-31-50-65l0-25z" fill="#2f8396" />
+  <circle cx="610" cy="355" r="54" fill="#f0c4ac" />
+  <path d="M540 486c18-82 126-85 150 0l8 25c10 30-11 58-42 58H574c-31 0-52-28-42-58l8-25z" fill="#b1cbc8" />
+  <circle cx="860" cy="360" r="58" fill="#f3cfba" />
+  <path d="M786 500c20-88 145-92 171 0l8 24c11 32-13 60-45 60H824c-32 0-56-28-45-60l7-24z" fill="#5baab4" />
+  <circle cx="500" cy="655" r="54" fill="#f6fbfc" />
+  <path d="M470 650h60" stroke="#7cbfc3" stroke-width="12" stroke-linecap="round" />
+  <path d="M500 620v60" stroke="#7cbfc3" stroke-width="12" stroke-linecap="round" />
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 880" role="img" aria-labelledby="title desc">
+  <title id="title">Perfil de Valentina Herrera</title>
+  <desc id="desc">Placeholder visual de una nutricionista en un ambiente sereno y luminoso.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#eef9f8" />
+      <stop offset="100%" stop-color="#d8eee9" />
+    </linearGradient>
+  </defs>
+  <rect width="720" height="880" fill="url(#bg)" />
+  <circle cx="150" cy="150" r="90" fill="#d7efea" />
+  <rect x="130" y="640" width="470" height="135" rx="26" fill="#f9fcfd" opacity="0.74" />
+  <circle cx="362" cy="280" r="98" fill="#f4cfba" />
+  <path d="M224 520c28-138 235-148 282 0l12 34c24 70-25 132-96 132H306c-71 0-120-62-96-132l14-34z" fill="#78c0b5" />
+  <path d="M280 188c22-62 140-69 174 12 8-77-42-130-103-130-61 0-103 55-71 118z" fill="#31596a" />
+  <circle cx="545" cy="708" r="34" fill="#84c95f" />
+</svg>

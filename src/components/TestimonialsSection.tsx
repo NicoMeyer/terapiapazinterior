@@ -6,15 +6,17 @@ type TestimonialsSectionProps = {
 };
 
 export function TestimonialsSection({ testimonials }: TestimonialsSectionProps) {
+  const featuredTestimonials = testimonials.slice(0, 2);
+
   return (
     <SectionShell
       id="testimonios"
-      eyebrow="Recomendaciones"
-      title="Una sección pensada para transmitir confianza sin perder transparencia en esta primera versión."
-      intro="Los siguientes testimonios son de demostración y están incluidos para representar cómo se verá esta área al contar con opiniones reales."
+      eyebrow="Confianza"
+      title="Una referencia breve de cómo podría sentirse la experiencia."
+      intro="Testimonios de demostración para representar esta futura sección con un tono más editorial y liviano."
     >
-      <div className="testimonials-list">
-        {testimonials.map((testimonial) => (
+      <div className="testimonials-list testimonials-list--featured">
+        {featuredTestimonials.map((testimonial) => (
           <article key={testimonial.id} className="testimonial-card">
             {testimonial.isDemo ? <span className="tag">Testimonio de demostración</span> : null}
             <blockquote>{testimonial.quote}</blockquote>

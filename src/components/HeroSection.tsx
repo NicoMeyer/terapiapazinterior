@@ -13,6 +13,10 @@ type HeroSectionProps = {
     label: string;
     href: string;
   };
+  image: {
+    src: string;
+    alt: string;
+  };
   featuredNotes: string[];
 };
 
@@ -23,6 +27,7 @@ export function HeroSection({
   description,
   primaryCta,
   secondaryCta,
+  image,
   featuredNotes,
 }: HeroSectionProps) {
   const { ref, isVisible } = useRevealOnScroll<HTMLElement>();
@@ -58,14 +63,12 @@ export function HeroSection({
 
       <div className="hero__visual" aria-hidden="true">
         <div className="hero__visual-frame">
+          <img className="hero__image" src={image.src} alt={image.alt} />
           <div className="hero__visual-copy">
-            <span>Espacio visual reservado</span>
-            <strong>Fotografía del centro o momento de atención</strong>
-            <p>Ideal para transmitir cercanía, calma y profesionalismo desde la primera impresión.</p>
+            <span>Imagen referencial</span>
+            <strong>Atención cálida en un entorno sereno y profesional</strong>
           </div>
         </div>
-        <div className="hero__badge hero__badge--top">Acompañamiento humano</div>
-        <div className="hero__badge hero__badge--bottom">Orientación clara desde el inicio</div>
       </div>
     </section>
   );

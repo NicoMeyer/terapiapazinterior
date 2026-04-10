@@ -7,10 +7,8 @@ import type {
 } from '../types/content';
 
 export const navItems: NavItem[] = [
-  { id: 'enfoque', label: 'Enfoque' },
   { id: 'especialidades', label: 'Especialidades' },
   { id: 'equipo', label: 'Equipo' },
-  { id: 'testimonios', label: 'Recomendaciones' },
   { id: 'contacto', label: 'Contacto' },
 ];
 
@@ -18,9 +16,9 @@ export const heroContent = {
   eyebrow: 'Centro terapéutico integral',
   title: 'Terapia Paz Interior',
   subtitle:
-    'Acompañamos a personas y familias con una atención cercana, clara y profesional en Terapia Ocupacional y Nutrición.',
+    'Terapia Ocupacional y Nutrición con una atención cercana, clara y profesional.',
   description:
-    'Esta primera versión reúne de forma simple lo esencial para conocer nuestro enfoque, revisar a cada profesional y dar el siguiente paso con confianza.',
+    'Un espacio pensado para orientar, acompañar y dar tranquilidad desde el primer contacto.',
   primaryCta: {
     label: 'Agendar orientación',
     href: 'https://www.google.cl',
@@ -29,36 +27,26 @@ export const heroContent = {
     label: 'Ver especialidades',
     href: '#especialidades',
   },
+  image: {
+    src: '/placeholders/hero-care.svg',
+    alt: 'Placeholder visual de una atención terapéutica cálida y profesional en un espacio luminoso.',
+  },
   featuredNotes: [
-    'Atención con enfoque humano y acompañamiento activo',
-    'Especialidades pensadas para trabajar en red con familias',
-    'Información clara para resolver dudas desde el primer contacto',
+    'Acompañamiento humano desde el inicio',
+    'Especialidades pensadas para personas y familias',
   ],
 };
 
-export const missionContent = {
-  title: 'Un lugar que busca bajar la incertidumbre y abrir espacio a procesos con sentido.',
-  paragraphs: [
-    'En Terapia Paz Interior queremos que cada persona llegue sintiendo que será escuchada con respeto, orientación concreta y una mirada profesional que considere su contexto cotidiano.',
-    'Nuestro enfoque integra trabajo terapéutico, comunicación clara y seguimiento cercano para que las familias sepan qué esperar, cómo participar y hacia dónde avanzar.',
-  ],
-  principles: [
-    {
-      title: 'Cercanía profesional',
-      description:
-        'Explicamos cada proceso con un lenguaje claro, amable y honesto, sin perder rigurosidad clínica.',
-    },
-    {
-      title: 'Trabajo personalizado',
-      description:
-        'Cada plan se piensa desde las necesidades reales de la persona, su rutina y su red de apoyo.',
-    },
-    {
-      title: 'Confianza desde el inicio',
-      description:
-        'Priorizamos una experiencia ordenada y cálida para que el primer contacto ya entregue tranquilidad.',
-    },
-  ],
+export const supportContent = {
+  eyebrow: 'Acompañamiento claro',
+  title: 'Menos incertidumbre, más orientación y un proceso que se entiende desde el principio.',
+  description:
+    'Pensamos la experiencia del centro para que cada familia pueda avanzar con calma, confianza y una guía concreta.',
+  image: {
+    src: '/placeholders/support-family.svg',
+    alt: 'Placeholder visual de una familia siendo acompañada por una profesional en una sesión cálida.',
+  },
+  points: ['Escucha cercana', 'Pasos concretos', 'Comunicación simple'],
 };
 
 export const specialties: Specialty[] = [
@@ -66,23 +54,27 @@ export const specialties: Specialty[] = [
     id: 'ocupacional',
     name: 'Terapia Ocupacional',
     summary:
-      'Apoyo terapéutico enfocado en participación diaria, autonomía y adaptación de rutinas para distintas etapas del desarrollo.',
+      'Apoyo para fortalecer autonomía, participación y rutinas cotidianas.',
     highlights: [
-      'Evaluación funcional y acompañamiento en actividades de la vida diaria',
-      'Orientación para familias y tutores en hábitos, juego y entornos',
-      'Planes de intervención con foco en metas concretas y aplicables',
+      'Participación diaria y juego',
+      'Orientación para familia y entorno',
     ],
+    image: '/placeholders/specialty-ocupacional.svg',
+    imageAlt:
+      'Placeholder visual de terapia ocupacional con materiales de juego, acompañamiento y trabajo funcional.',
   },
   {
     id: 'nutricion',
     name: 'Nutrición',
     summary:
-      'Acompañamiento nutricional cercano para construir hábitos sostenibles, mejorar bienestar y entregar orientación práctica a cada familia.',
+      'Acompañamiento nutricional práctico para hábitos sostenibles y bienestar.',
     highlights: [
-      'Planes alimentarios adaptados a objetivos y contextos cotidianos',
-      'Educación nutricional simple, clara y realista',
-      'Seguimiento respetuoso para cambios progresivos y sostenibles',
+      'Educación alimentaria clara',
+      'Cambios posibles de sostener',
     ],
+    image: '/placeholders/specialty-nutricion.svg',
+    imageAlt:
+      'Placeholder visual de nutrición con alimentos frescos y una consulta amable en un ambiente claro.',
   },
 ];
 
@@ -93,7 +85,7 @@ export const professionals: Professional[] = [
     specialtyId: 'ocupacional',
     role: 'Terapeuta Ocupacional',
     bioShort:
-      'Acompaña procesos de autonomía, participación y adaptación de rutinas con una mirada práctica y familiar.',
+      'Acompaña autonomía, participación y rutinas con una mirada práctica y familiar.',
     bioFull:
       'Camila trabaja con niñas, niños y familias en procesos donde la organización diaria, la regulación y la participación ocupacional necesitan apoyo concreto. Su estilo combina observación clínica, escucha activa y estrategias que puedan trasladarse con naturalidad a la vida cotidiana.',
     credentials: [
@@ -106,8 +98,8 @@ export const professionals: Professional[] = [
       'Rutinas, juego y participación escolar',
       'Orientación a familias y adaptación de entornos',
     ],
-    photo: null,
-    photoAlt: 'Espacio reservado para fotografía profesional de Camila Reyes',
+    photo: '/placeholders/professional-camila.svg',
+    photoAlt: 'Placeholder visual para el perfil profesional de Camila Reyes.',
     contactCtaLabel: 'Consultar por Terapia Ocupacional',
   },
   {
@@ -116,7 +108,7 @@ export const professionals: Professional[] = [
     specialtyId: 'nutricion',
     role: 'Nutricionista',
     bioShort:
-      'Entrega acompañamiento nutricional amable y realista, enfocado en hábitos sostenibles y educación práctica.',
+      'Entrega acompañamiento nutricional amable, claro y realista para cada familia.',
     bioFull:
       'Valentina acompaña a personas y familias que buscan ordenar su alimentación sin juicios ni fórmulas rígidas. Su trabajo se centra en construir cambios posibles de sostener, considerando objetivos de salud, historia alimentaria y la dinámica real del hogar.',
     credentials: [
@@ -129,8 +121,8 @@ export const professionals: Professional[] = [
       'Educación nutricional para familias',
       'Orientación práctica para bienestar integral',
     ],
-    photo: null,
-    photoAlt: 'Espacio reservado para fotografía profesional de Valentina Herrera',
+    photo: '/placeholders/professional-valentina.svg',
+    photoAlt: 'Placeholder visual para el perfil profesional de Valentina Herrera.',
     contactCtaLabel: 'Consultar por Nutrición',
   },
 ];
@@ -139,7 +131,7 @@ export const testimonials: Testimonial[] = [
   {
     id: 'testimonio-1',
     quote:
-      'Desde la primera orientación sentimos que había un plan claro y un equipo que realmente quería acompañarnos. Todo fue explicado con mucha calidez.',
+      'Desde la primera orientación sentimos calma, claridad y un equipo realmente dispuesto a acompañarnos.',
     author: 'María P.',
     relation: 'Apoderada',
     isDemo: true,
@@ -147,17 +139,9 @@ export const testimonials: Testimonial[] = [
   {
     id: 'testimonio-2',
     quote:
-      'Agradecimos mucho la forma cercana de trabajar. Pudimos entender mejor el proceso y llevar recomendaciones concretas a casa.',
+      'La forma de explicar el proceso fue muy cercana y nos ayudó a llevar recomendaciones concretas a casa.',
     author: 'Javiera R.',
     relation: 'Madre y tutora',
-    isDemo: true,
-  },
-  {
-    id: 'testimonio-3',
-    quote:
-      'La orientación fue profesional, amable y muy aterrizada a nuestra realidad. Nos dio tranquilidad para seguir avanzando.',
-    author: 'Felipe C.',
-    relation: 'Usuario adulto',
     isDemo: true,
   },
 ];
@@ -172,6 +156,6 @@ export const contactInfo: ContactInfo = {
 
 export const footerContent = {
   statement:
-    'Terapia Paz Interior es una propuesta de atención cercana, respetuosa y profesional para acompañar procesos terapéuticos con mayor claridad.',
+    'Terapia Paz Interior propone una experiencia cercana, clara y profesional para personas y familias.',
   legal: 'Contenido provisional para etapa inicial de desarrollo.',
 };

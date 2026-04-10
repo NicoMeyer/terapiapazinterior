@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 880" role="img" aria-labelledby="title desc">
+  <title id="title">Perfil de Camila Reyes</title>
+  <desc id="desc">Placeholder visual de una terapeuta ocupacional en un ambiente cálido y claro.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ecf8f8" />
+      <stop offset="100%" stop-color="#d7ecef" />
+    </linearGradient>
+  </defs>
+  <rect width="720" height="880" fill="url(#bg)" />
+  <circle cx="570" cy="132" r="78" fill="#d5eeee" />
+  <rect x="120" y="640" width="480" height="130" rx="26" fill="#f8fcfd" opacity="0.75" />
+  <circle cx="360" cy="278" r="98" fill="#f2cab5" />
+  <path d="M218 514c26-132 235-142 282 0l14 40c22 65-25 126-94 126H300c-69 0-116-61-94-126l12-40z" fill="#2f8396" />
+  <path d="M282 210c22-52 129-62 164 3 10-59-21-118-88-118-56 0-87 47-76 115z" fill="#234859" />
+  <rect x="280" y="688" width="160" height="16" rx="8" fill="#5b7d86" />
+</svg>

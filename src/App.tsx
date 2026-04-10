@@ -3,10 +3,10 @@ import {
   contactInfo,
   footerContent,
   heroContent,
-  missionContent,
   navItems,
   professionals,
   specialties,
+  supportContent,
   testimonials,
 } from './data/siteContent';
 import { ContactSection } from './components/ContactSection';
@@ -14,9 +14,9 @@ import { FinalCtaSection } from './components/FinalCtaSection';
 import { Footer } from './components/Footer';
 import { Header } from './components/Header';
 import { HeroSection } from './components/HeroSection';
-import { MissionSection } from './components/MissionSection';
 import { ProfessionalModal } from './components/ProfessionalModal';
 import { SpecialtiesSection } from './components/SpecialtiesSection';
+import { SupportSection } from './components/SupportSection';
 import { TeamSection } from './components/TeamSection';
 import { TestimonialsSection } from './components/TestimonialsSection';
 import type { Professional } from './types/content';
@@ -37,7 +37,7 @@ function App() {
 
       <main>
         <HeroSection {...heroContent} />
-        <MissionSection {...missionContent} />
+        <SupportSection content={supportContent} />
         <SpecialtiesSection specialties={specialties} />
         <TeamSection
           professionals={professionals}

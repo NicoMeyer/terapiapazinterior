@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 840" role="img" aria-labelledby="title desc">
+  <title id="title">Terapia ocupacional</title>
+  <desc id="desc">Placeholder visual con materiales lúdicos y de trabajo funcional en terapia ocupacional.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#eff8f9" />
+      <stop offset="100%" stop-color="#dceff0" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="840" fill="url(#bg)" />
+  <rect y="560" width="1200" height="280" fill="#d8ecee" />
+  <circle cx="970" cy="145" r="100" fill="#d3efef" />
+  <rect x="160" y="175" width="385" height="365" rx="34" fill="#f8fcfd" />
+  <rect x="225" y="245" width="255" height="215" rx="26" fill="#cfe9eb" />
+  <circle cx="352" cy="352" r="56" fill="#7bbfc4" />
+  <rect x="650" y="182" width="280" height="210" rx="26" fill="#88c7bf" />
+  <rect x="720" y="420" width="230" height="140" rx="22" fill="#f7fbfc" />
+  <circle cx="718" cy="260" r="46" fill="#f0c7b0" />
+  <path d="M664 372c14-61 95-64 112 0l8 22c7 22-10 42-32 42h-64c-22 0-39-20-32-42l8-22z" fill="#2f8396" />
+  <rect x="760" y="520" width="150" height="18" rx="9" fill="#1d4252" opacity="0.82" />
+  <rect x="760" y="480" width="110" height="14" rx="7" fill="#61b8be" />
+</svg>

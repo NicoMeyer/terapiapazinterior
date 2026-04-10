@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Atención terapéutica cálida</title>
+  <desc id="desc">Escena ilustrada tipo placeholder de una orientación terapéutica en un centro luminoso.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f6fbfc" />
+      <stop offset="100%" stop-color="#dbeff1" />
+    </linearGradient>
+    <linearGradient id="wall" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#eef8f9" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7dc4c8" />
+      <stop offset="100%" stop-color="#4ea0ad" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)" />
+  <rect y="70" width="1200" height="490" rx="30" fill="url(#wall)" />
+  <rect y="560" width="1200" height="340" fill="#d9ecee" />
+  <circle cx="1010" cy="155" r="78" fill="#d6f1f0" />
+  <circle cx="1080" cy="220" r="46" fill="#c7e8e5" />
+  <rect x="125" y="150" width="340" height="255" rx="26" fill="#cfe8ea" />
+  <rect x="160" y="178" width="270" height="198" rx="18" fill="#f7fcfc" />
+  <rect x="620" y="495" width="395" height="205" rx="26" fill="#f7fbfc" opacity="0.96" />
+  <rect x="582" y="650" width="490" height="45" rx="22.5" fill="#e4f3f4" />
+  <ellipse cx="560" cy="430" rx="135" ry="42" fill="#adc9cf" opacity="0.35" />
+  <ellipse cx="808" cy="432" rx="135" ry="42" fill="#adc9cf" opacity="0.35" />
+  <circle cx="560" cy="245" r="64" fill="#f2c6b1" />
+  <circle cx="808" cy="245" r="64" fill="#f0cab6" />
+  <path d="M482 372c24-76 153-93 190-13l10 20c14 29-9 61-41 61H508c-32 0-55-32-41-61l15-7z" fill="url(#accent)" />
+  <path d="M732 372c24-76 153-93 190-13l10 20c14 29-9 61-41 61H758c-32 0-55-32-41-61l15-7z" fill="#7eb2ba" />
+  <rect x="546" y="312" width="30" height="110" rx="15" fill="#f2c6b1" />
+  <rect x="792" y="312" width="30" height="110" rx="15" fill="#f0cab6" />
+  <path d="M576 360c64 18 134 18 216 0" fill="none" stroke="#f4d8cb" stroke-width="13" stroke-linecap="round" />
+  <path d="M742 360c39 10 84 18 115 21" fill="none" stroke="#d4e9eb" stroke-width="11" stroke-linecap="round" />
+  <rect x="644" y="545" width="130" height="16" rx="8" fill="#64b6bc" />
+  <rect x="644" y="580" width="280" height="20" rx="10" fill="#234859" opacity="0.84" />
+  <rect x="644" y="620" width="240" height="18" rx="9" fill="#5f7d87" opacity="0.5" />
+</svg>

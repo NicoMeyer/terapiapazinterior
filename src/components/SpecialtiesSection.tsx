@@ -10,12 +10,15 @@ export function SpecialtiesSection({ specialties }: SpecialtiesSectionProps) {
     <SectionShell
       id="especialidades"
       eyebrow="Especialidades"
-      title="Dos áreas para acompañar procesos con atención clara, cercana y aplicada a la vida cotidiana."
-      intro="La propuesta inicial del centro combina intervención terapéutica y acompañamiento nutricional desde un lenguaje accesible y profesional."
+      title="Dos especialidades para acompañar con claridad y cercanía."
+      intro="Una propuesta simple de entender, con foco en intervención práctica y apoyo real para cada familia."
     >
       <div className="specialties-list">
         {specialties.map((specialty) => (
           <article key={specialty.id} className="specialty-panel">
+            <div className="specialty-panel__media">
+              <img src={specialty.image} alt={specialty.imageAlt} loading="lazy" />
+            </div>
             <div className="specialty-panel__heading">
               <p>{specialty.id === 'ocupacional' ? '01' : '02'}</p>
               <h3>{specialty.name}</h3>
