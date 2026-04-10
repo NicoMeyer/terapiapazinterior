@@ -7,7 +7,6 @@ import type {
 } from '../types/content';
 
 export const navItems: NavItem[] = [
-  { id: 'inicio', label: 'Inicio' },
   { id: 'enfoque', label: 'Enfoque' },
   { id: 'especialidades', label: 'Especialidades' },
   { id: 'equipo', label: 'Equipo' },
