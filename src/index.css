@@ -1,21 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap');
 
 :root {
-  --bg: #f3fbfc;
-  --bg-strong: #dff2f3;
-  --surface: rgba(255, 255, 255, 0.76);
-  --surface-strong: rgba(248, 254, 255, 0.92);
-  --text: #1d3b40;
-  --muted: #56757a;
+  --bg: #2f8396;
+  --bg-strong: #27788c;
+  --surface: rgba(245, 251, 252, 0.9);
+  --surface-strong: rgba(250, 254, 255, 0.95);
+  --text: #123845;
+  --muted: #4d6d77;
   --accent: #61b8be;
-  --accent-deep: #3f979e;
-  --accent-soft: #d9f1f3;
-  --secondary: #88c6b1;
-  --secondary-soft: #e3f4ec;
-  --warm: #4f9fa5;
-  --warm-soft: #bfe6e9;
-  --border: rgba(97, 184, 190, 0.18);
-  --shadow: 0 28px 70px rgba(62, 122, 128, 0.12);
+  --accent-deep: #2d8793;
+  --accent-soft: #d5eff1;
+  --secondary: #7fd0c7;
+  --secondary-soft: #e1f7f4;
+  --warm: #3ca7b2;
+  --warm-soft: #bdecef;
+  --border: rgba(175, 227, 232, 0.22);
+  --shadow: 0 28px 70px rgba(16, 62, 75, 0.22);
   --radius-lg: 32px;
   --radius-md: 22px;
   --radius-sm: 16px;
@@ -40,9 +40,9 @@ body {
   color: var(--text);
   background-color: var(--bg);
   background:
-    radial-gradient(circle at top left, rgba(191, 230, 233, 0.45), transparent 30%),
-    radial-gradient(circle at right center, rgba(136, 198, 177, 0.18), transparent 28%),
-    linear-gradient(180deg, #f8feff 0%, #f3fbfc 42%, #eef8f7 100%);
+    radial-gradient(circle at top left, rgba(173, 236, 229, 0.32), transparent 28%),
+    radial-gradient(circle at right center, rgba(207, 244, 240, 0.14), transparent 25%),
+    linear-gradient(180deg, #3b94a5 0%, #2f8396 42%, #28798d 100%);
   font-family: 'Manrope', sans-serif;
   line-height: 1.6;
   overscroll-behavior-y: none;
@@ -104,13 +104,13 @@ button {
 .page-shell__ambient--one {
   top: -6rem;
   right: -8rem;
-  background: rgba(97, 184, 190, 0.16);
+  background: rgba(97, 184, 190, 0.22);
 }
 
 .page-shell__ambient--two {
   bottom: 8rem;
   left: -10rem;
-  background: rgba(136, 198, 177, 0.14);
+  background: rgba(127, 208, 199, 0.16);
 }
 
 .site-header,
@@ -131,8 +131,8 @@ main,
   justify-content: space-between;
   gap: 1rem;
   backdrop-filter: blur(18px);
-  background: rgba(243, 251, 252, 0.8);
-  border-bottom: 1px solid rgba(97, 184, 190, 0.14);
+  background: rgba(34, 114, 131, 0.68);
+  border-bottom: 1px solid rgba(220, 245, 247, 0.16);
 }
 
 .site-header__brand {
@@ -148,12 +148,13 @@ main,
 }
 
 .site-header__brand p {
+  color: #f3fcfd;
   font-weight: 700;
   font-size: 0.98rem;
 }
 
 .site-header__brand span {
-  color: var(--muted);
+  color: rgba(229, 246, 248, 0.72);
   font-size: 0.82rem;
 }
 
@@ -163,8 +164,8 @@ main,
   border-radius: 50%;
   display: grid;
   place-items: center;
-  background: rgba(97, 184, 190, 0.14);
-  color: var(--accent);
+  background: rgba(255, 255, 255, 0.12);
+  color: #effcfd;
   font-weight: 700;
 }
 
@@ -177,7 +178,7 @@ main,
 }
 
 .site-header__nav a {
-  color: var(--muted);
+  color: rgba(235, 249, 250, 0.82);
   font-size: 0.94rem;
 }
 
@@ -210,12 +211,13 @@ main,
 
 .button--ghost {
   border: 1px solid rgba(97, 184, 190, 0.22);
-  background: rgba(249, 255, 255, 0.72);
-  color: var(--text);
+  background: rgba(248, 254, 255, 0.14);
+  color: #effcfd;
 }
 
 .button--ghost:hover {
   border-color: rgba(97, 184, 190, 0.42);
+  background: rgba(248, 254, 255, 0.2);
 }
 
 .button--text {
@@ -260,7 +262,7 @@ main {
   letter-spacing: 0.14em;
   font-size: 0.78rem;
   font-weight: 700;
-  color: var(--warm);
+  color: rgba(218, 247, 249, 0.94);
 }
 
 .hero h1,
@@ -274,20 +276,21 @@ main {
 }
 
 .hero h1 {
+  color: #f4fdfe;
   font-size: clamp(4.2rem, 9vw, 6.7rem);
 }
 
 .hero__subtitle {
   margin: 1.5rem 0 0;
   font-size: clamp(1.15rem, 2vw, 1.55rem);
-  color: var(--text);
+  color: rgba(248, 254, 255, 0.98);
   max-width: 32rem;
 }
 
 .hero__description {
   margin: 1.25rem 0 0;
   max-width: 31rem;
-  color: var(--muted);
+  color: rgba(237, 249, 250, 0.92);
   font-size: 1rem;
 }
 
@@ -310,7 +313,7 @@ main {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  color: var(--muted);
+  color: rgba(242, 251, 252, 0.94);
 }
 
 .hero__notes li::before {
@@ -335,8 +338,8 @@ main {
   border-radius: var(--radius-lg);
   padding: 1.5rem;
   background:
-    linear-gradient(160deg, rgba(248, 254, 255, 0.92), rgba(224, 244, 246, 0.74)),
-    linear-gradient(135deg, rgba(97, 184, 190, 0.12), rgba(136, 198, 177, 0.16));
+    linear-gradient(160deg, rgba(242, 252, 253, 0.94), rgba(215, 239, 242, 0.82)),
+    linear-gradient(135deg, rgba(97, 184, 190, 0.16), rgba(127, 208, 199, 0.14));
   box-shadow: var(--shadow);
   border: 1px solid rgba(255, 255, 255, 0.45);
 }
@@ -349,7 +352,7 @@ main {
   background:
     radial-gradient(circle at 25% 25%, rgba(255, 255, 255, 0.85), transparent 18%),
     linear-gradient(140deg, rgba(97, 184, 190, 0.14), rgba(136, 198, 177, 0.14)),
-    linear-gradient(180deg, #f3fcfd 0%, #dbeff1 100%);
+    linear-gradient(180deg, #f0fbfc 0%, #d4ecef 100%);
 }
 
 .hero__visual-copy {
@@ -393,9 +396,9 @@ main {
   position: absolute;
   padding: 0.8rem 1rem;
   border-radius: 999px;
-  background: rgba(252, 255, 255, 0.92);
-  color: var(--text);
-  box-shadow: 0 16px 30px rgba(62, 122, 128, 0.1);
+  background: rgba(245, 252, 253, 0.94);
+  color: #17424f;
+  box-shadow: 0 16px 30px rgba(28, 87, 102, 0.12);
   font-size: 0.9rem;
 }
 
@@ -425,12 +428,14 @@ main {
 .section-shell__title {
   max-width: 46rem;
   font-size: clamp(2.8rem, 5vw, 4.4rem);
+  color: #f4fdfe;
+  text-shadow: 0 2px 18px rgba(7, 52, 64, 0.16);
 }
 
 .section-shell__intro {
   max-width: 41rem;
   margin: 1rem 0 0;
-  color: var(--muted);
+  color: rgba(236, 249, 250, 0.92);
 }
 
 .mission-grid,
@@ -755,7 +760,7 @@ main {
   display: grid;
   place-items: center;
   padding: 1.5rem;
-  background: rgba(24, 52, 56, 0.36);
+  background: rgba(28, 72, 82, 0.28);
   backdrop-filter: blur(8px);
 }
 
