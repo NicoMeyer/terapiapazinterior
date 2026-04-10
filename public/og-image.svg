@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f7f1e8" />
+      <stop offset="100%" stop-color="#e6d4c6" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <circle cx="930" cy="170" r="140" fill="#d2ba9f" opacity="0.9" />
+  <circle cx="1020" cy="420" r="190" fill="#d9e0d8" opacity="0.8" />
+  <text x="110" y="250" fill="#2f312c" font-size="78" font-family="Georgia, serif">Terapia Paz Interior</text>
+  <text x="110" y="330" fill="#46625b" font-size="34" font-family="Arial, sans-serif">
+    Terapia Ocupacional y Nutrición con un enfoque cercano y profesional
+  </text>
+  <text x="110" y="430" fill="#7b543e" font-size="28" font-family="Arial, sans-serif">
+    Centro terapéutico integral para personas y familias
+  </text>
+</svg>
