@@ -10,8 +10,8 @@ export function SpecialtiesSection({ specialties }: SpecialtiesSectionProps) {
     <SectionShell
       id="especialidades"
       eyebrow="Especialidades"
-      title="Dos especialidades para acompañar con claridad y cercanía."
-      intro="Una propuesta simple de entender, con foco en intervención práctica y apoyo real para cada familia."
+      title="Dos áreas para acompañar juego, hábitos y bienestar en familia."
+      intro="Una propuesta simple de entender, con apoyo cercano y herramientas que puedan sentirse útiles también fuera de la consulta."
     >
       <div className="specialties-list">
         {specialties.map((specialty) => (

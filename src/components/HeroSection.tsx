@@ -17,6 +17,10 @@ type HeroSectionProps = {
     src: string;
     alt: string;
   };
+  imageCaption: {
+    eyebrow: string;
+    title: string;
+  };
   featuredNotes: string[];
 };
 
@@ -28,6 +32,7 @@ export function HeroSection({
   primaryCta,
   secondaryCta,
   image,
+  imageCaption,
   featuredNotes,
 }: HeroSectionProps) {
   const { ref, isVisible } = useRevealOnScroll<HTMLElement>();
@@ -65,8 +70,8 @@ export function HeroSection({
         <div className="hero__visual-frame">
           <img className="hero__image" src={image.src} alt={image.alt} />
           <div className="hero__visual-copy">
-            <span>Imagen referencial</span>
-            <strong>Atención cálida en un entorno sereno y profesional</strong>
+            <span>{imageCaption.eyebrow}</span>
+            <strong>{imageCaption.title}</strong>
           </div>
         </div>
       </div>

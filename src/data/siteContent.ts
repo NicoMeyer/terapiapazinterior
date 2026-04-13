@@ -13,12 +13,12 @@ export const navItems: NavItem[] = [
 ];
 
 export const heroContent = {
-  eyebrow: 'Centro terapéutico integral',
+  eyebrow: 'Acompañamiento para familias',
   title: 'Terapia Paz Interior',
   subtitle:
-    'Terapia Ocupacional y Nutrición con una atención cercana, clara y profesional.',
+    'Terapia Ocupacional y Nutrición para acompañar a niñas, niños y sus familias con cercanía y calma.',
   description:
-    'Un espacio pensado para orientar, acompañar y dar tranquilidad desde el primer contacto.',
+    'Un centro pensado para orientar desde el primer contacto, transformar dudas en pasos posibles y ofrecer un espacio amable para crecer, jugar y avanzar.',
   primaryCta: {
     label: 'Agendar orientación',
     href: 'https://www.google.cl',
@@ -29,24 +29,44 @@ export const heroContent = {
   },
   image: {
     src: '/placeholders/hero-care.svg',
-    alt: 'Placeholder visual de una atención terapéutica cálida y profesional en un espacio luminoso.',
+    alt: 'Escena referencial de una atención infantil cálida en un espacio terapéutico claro y acogedor.',
+  },
+  imageCaption: {
+    eyebrow: 'Espacio referencial',
+    title: 'Juego, escucha y acompañamiento para cada familia',
   },
   featuredNotes: [
-    'Acompañamiento humano desde el inicio',
-    'Especialidades pensadas para personas y familias',
+    'Orientación clara para familias desde el primer contacto',
+    'Un espacio amable para jugar, aprender y avanzar con confianza',
   ],
 };
 
 export const supportContent = {
-  eyebrow: 'Acompañamiento claro',
-  title: 'Menos incertidumbre, más orientación y un proceso que se entiende desde el principio.',
+  eyebrow: 'Cómo acompañamos',
+  title: 'Un proceso simple para que cada familia sepa por dónde empezar.',
   description:
-    'Pensamos la experiencia del centro para que cada familia pueda avanzar con calma, confianza y una guía concreta.',
+    'Queremos que el camino se sienta claro, cercano y fácil de seguir desde la primera conversación.',
   image: {
     src: '/placeholders/support-family.svg',
-    alt: 'Placeholder visual de una familia siendo acompañada por una profesional en una sesión cálida.',
+    alt: 'Escena referencial de una profesional acompañando a una familia en un ambiente luminoso y cercano.',
   },
-  points: ['Escucha cercana', 'Pasos concretos', 'Comunicación simple'],
+  steps: [
+    {
+      number: '01',
+      title: 'Nos cuentan su inquietud',
+      description: 'Escuchamos con calma lo que hoy les preocupa y orientamos el mejor punto de partida.',
+    },
+    {
+      number: '02',
+      title: 'Definimos el camino inicial',
+      description: 'Revisamos qué especialidad puede ayudar más y cómo se verían los primeros pasos.',
+    },
+    {
+      number: '03',
+      title: 'Acompañamos con claridad',
+      description: 'Cada familia recibe una guía concreta, simple de entender y fácil de llevar a la vida diaria.',
+    },
+  ],
 };
 
 export const specialties: Specialty[] = [
@@ -54,27 +74,27 @@ export const specialties: Specialty[] = [
     id: 'ocupacional',
     name: 'Terapia Ocupacional',
     summary:
-      'Apoyo para fortalecer autonomía, participación y rutinas cotidianas.',
+      'Apoyo para que niñas y niños participen con más seguridad en su juego, rutinas y vida diaria.',
     highlights: [
-      'Participación diaria y juego',
-      'Orientación para familia y entorno',
+      'Juego, autonomía y participación cotidiana',
+      'Orientación práctica para familias y entorno',
     ],
     image: '/placeholders/specialty-ocupacional.svg',
     imageAlt:
-      'Placeholder visual de terapia ocupacional con materiales de juego, acompañamiento y trabajo funcional.',
+      'Escena referencial de terapia ocupacional infantil con juego guiado, materiales sensoriales y acompañamiento cercano.',
   },
   {
     id: 'nutricion',
     name: 'Nutrición',
     summary:
-      'Acompañamiento nutricional práctico para hábitos sostenibles y bienestar.',
+      'Acompañamiento nutricional amable para construir hábitos posibles y bienestar en familia.',
     highlights: [
-      'Educación alimentaria clara',
-      'Cambios posibles de sostener',
+      'Orientación simple y sin juicios',
+      'Cambios cotidianos que sí se pueden sostener',
     ],
     image: '/placeholders/specialty-nutricion.svg',
     imageAlt:
-      'Placeholder visual de nutrición con alimentos frescos y una consulta amable en un ambiente claro.',
+      'Escena referencial de nutrición con alimentos frescos, conversación cercana y un ambiente claro.',
   },
 ];
 
@@ -85,7 +105,7 @@ export const professionals: Professional[] = [
     specialtyId: 'ocupacional',
     role: 'Terapeuta Ocupacional',
     bioShort:
-      'Acompaña autonomía, participación y rutinas con una mirada práctica y familiar.',
+      'Acompaña juego, autonomía y rutinas con una mirada cercana, práctica y muy conectada con cada familia.',
     bioFull:
       'Camila trabaja con niñas, niños y familias en procesos donde la organización diaria, la regulación y la participación ocupacional necesitan apoyo concreto. Su estilo combina observación clínica, escucha activa y estrategias que puedan trasladarse con naturalidad a la vida cotidiana.',
     credentials: [
@@ -108,7 +128,7 @@ export const professionals: Professional[] = [
     specialtyId: 'nutricion',
     role: 'Nutricionista',
     bioShort:
-      'Entrega acompañamiento nutricional amable, claro y realista para cada familia.',
+      'Entrega orientación nutricional amable y realista para ordenar la alimentación sin presiones ni culpas.',
     bioFull:
       'Valentina acompaña a personas y familias que buscan ordenar su alimentación sin juicios ni fórmulas rígidas. Su trabajo se centra en construir cambios posibles de sostener, considerando objetivos de salud, historia alimentaria y la dinámica real del hogar.',
     credentials: [
@@ -131,7 +151,7 @@ export const testimonials: Testimonial[] = [
   {
     id: 'testimonio-1',
     quote:
-      'Desde la primera orientación sentimos calma, claridad y un equipo realmente dispuesto a acompañarnos.',
+      'Desde la primera conversación sentimos que había un espacio amable para nuestra familia y una guía clara para empezar.',
     author: 'María P.',
     relation: 'Apoderada',
     isDemo: true,
@@ -139,7 +159,7 @@ export const testimonials: Testimonial[] = [
   {
     id: 'testimonio-2',
     quote:
-      'La forma de explicar el proceso fue muy cercana y nos ayudó a llevar recomendaciones concretas a casa.',
+      'Nos ayudó mucho que explicaran todo con palabras simples y con ideas que de verdad podíamos llevar a la casa.',
     author: 'Javiera R.',
     relation: 'Madre y tutora',
     isDemo: true,
@@ -156,6 +176,6 @@ export const contactInfo: ContactInfo = {
 
 export const footerContent = {
   statement:
-    'Terapia Paz Interior propone una experiencia cercana, clara y profesional para personas y familias.',
+    'Terapia Paz Interior propone una experiencia cálida, clara y profesional para niñas, niños y sus familias.',
   legal: 'Contenido provisional para etapa inicial de desarrollo.',
 };

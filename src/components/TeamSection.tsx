@@ -18,8 +18,8 @@ export function TeamSection({
     <SectionShell
       id="equipo"
       eyebrow="Equipo"
-      title="Un equipo pequeño, cercano y fácil de conocer."
-      intro="Cada perfil se presenta de forma breve y el detalle queda disponible solo para quien quiera profundizar."
+      title="Profesionales cercanas, con experiencia y una forma de trabajar muy humana."
+      intro="Queremos que conocer al equipo se sienta simple: quiénes son, cómo acompañan y qué mirada aportan a cada proceso."
     >
       <div className="team-grid">
         {professionals.map((professional) => (

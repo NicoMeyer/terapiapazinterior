@@ -1,21 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700;800&family=Manrope:wght@400;500;600;700&display=swap');
 
 :root {
-  --bg: #2f8396;
-  --bg-strong: #27788c;
-  --surface: rgba(245, 251, 252, 0.9);
-  --surface-strong: rgba(250, 254, 255, 0.95);
-  --text: #123845;
-  --muted: #4d6d77;
-  --accent: #61b8be;
-  --accent-deep: #2d8793;
-  --accent-soft: #d5eff1;
-  --secondary: #7fd0c7;
-  --secondary-soft: #e1f7f4;
-  --warm: #3ca7b2;
-  --warm-soft: #bdecef;
-  --border: rgba(175, 227, 232, 0.22);
-  --shadow: 0 28px 70px rgba(16, 62, 75, 0.22);
+  --bg: #f8f5ef;
+  --bg-strong: #ebf4f2;
+  --surface: rgba(255, 251, 247, 0.92);
+  --surface-strong: rgba(255, 253, 250, 0.98);
+  --text: #1b5260;
+  --muted: #53717c;
+  --accent: #69bec2;
+  --accent-deep: #368e97;
+  --accent-soft: #d8f0f0;
+  --secondary: #9fd9d0;
+  --secondary-soft: #edf8f5;
+  --warm: #f2a78b;
+  --warm-soft: #ffe4d8;
+  --border: rgba(121, 191, 190, 0.18);
+  --shadow: 0 22px 48px rgba(71, 131, 139, 0.14);
   --radius-lg: 32px;
   --radius-md: 22px;
   --radius-sm: 16px;
@@ -31,7 +31,7 @@ html {
   width: 100%;
   max-width: 100%;
   scroll-behavior: smooth;
-  background-color: var(--bg);
+  background-color: #fbf7f2;
   overflow-x: hidden;
   overflow-y: auto;
   overscroll-behavior-x: none;
@@ -44,11 +44,12 @@ body {
   width: 100%;
   max-width: 100%;
   color: var(--text);
-  background-color: var(--bg);
+  background-color: #fbf7f2;
   background:
-    radial-gradient(circle at top left, rgba(173, 236, 229, 0.32), transparent 28%),
-    radial-gradient(circle at right center, rgba(207, 244, 240, 0.14), transparent 25%),
-    linear-gradient(180deg, #3b94a5 0%, #2f8396 42%, #28798d 100%);
+    radial-gradient(circle at top left, rgba(145, 215, 210, 0.32), transparent 22%),
+    radial-gradient(circle at 85% 12%, rgba(255, 217, 200, 0.42), transparent 20%),
+    radial-gradient(circle at 12% 72%, rgba(224, 242, 237, 0.56), transparent 20%),
+    linear-gradient(180deg, #fbf7f2 0%, #f5f6f0 54%, #f7f2eb 100%);
   font-family: 'Manrope', sans-serif;
   line-height: 1.6;
   overflow-x: hidden;
@@ -85,7 +86,7 @@ button {
 }
 
 :focus-visible {
-  outline: 3px solid rgba(97, 184, 190, 0.35);
+  outline: 3px solid rgba(105, 190, 194, 0.35);
   outline-offset: 4px;
 }
 
@@ -119,13 +120,13 @@ button {
 .page-shell__ambient--one {
   top: -6rem;
   right: -8rem;
-  background: rgba(97, 184, 190, 0.22);
+  background: rgba(130, 210, 208, 0.24);
 }
 
 .page-shell__ambient--two {
   bottom: 8rem;
   left: -10rem;
-  background: rgba(127, 208, 199, 0.16);
+  background: rgba(255, 214, 193, 0.24);
 }
 
 .site-header,
@@ -150,11 +151,11 @@ main,
   border-radius: 999px;
   backdrop-filter: blur(20px);
   background:
-    linear-gradient(135deg, rgba(22, 95, 111, 0.92), rgba(48, 132, 149, 0.88));
-  border: 1px solid rgba(226, 248, 250, 0.16);
+    linear-gradient(135deg, rgba(65, 152, 164, 0.9), rgba(68, 143, 164, 0.84));
+  border: 1px solid rgba(255, 246, 239, 0.18);
   box-shadow:
-    0 24px 50px rgba(15, 63, 76, 0.22),
-    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+    0 20px 44px rgba(44, 107, 122, 0.18),
+    inset 0 1px 0 rgba(255, 253, 250, 0.18);
   overflow: hidden;
 }
 
@@ -214,13 +215,13 @@ main,
   min-width: 0;
   padding: 0.55rem;
   border-radius: 999px;
-  background: rgba(245, 252, 253, 0.08);
-  border: 1px solid rgba(235, 249, 250, 0.12);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  background: rgba(252, 250, 246, 0.11);
+  border: 1px solid rgba(255, 248, 242, 0.14);
+  box-shadow: inset 0 1px 0 rgba(255, 251, 248, 0.12);
 }
 
 .site-header__nav a {
-  color: rgba(230, 246, 248, 0.8);
+  color: rgba(248, 252, 252, 0.86);
   font-size: 0.9rem;
   font-weight: 600;
   padding: 0.68rem 0.98rem;
@@ -232,7 +233,7 @@ main,
 }
 
 .site-header__nav a:hover {
-  background: rgba(248, 254, 255, 0.14);
+  background: rgba(255, 248, 243, 0.14);
   color: #fdfefe;
   transform: translateY(-1px);
 }
@@ -247,9 +248,9 @@ main,
   height: 3.35rem;
   flex-shrink: 0;
   border-radius: 1.1rem;
-  background: rgba(248, 254, 255, 0.12);
-  border: 1px solid rgba(235, 249, 250, 0.12);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  background: rgba(255, 249, 244, 0.12);
+  border: 1px solid rgba(255, 249, 244, 0.16);
+  box-shadow: inset 0 1px 0 rgba(255, 253, 249, 0.1);
 }
 
 .site-header__menu-toggle span {
@@ -303,28 +304,29 @@ main,
 }
 
 .button--solid {
-  background: var(--accent);
-  color: #f6feff;
+  background: linear-gradient(135deg, #f4b59d, #f0a688);
+  color: #ffffff;
+  box-shadow: 0 14px 28px rgba(219, 150, 121, 0.22);
 }
 
 .button--solid:hover {
-  background: var(--accent-deep);
+  background: linear-gradient(135deg, #f0aa8c, #ea9b79);
 }
 
 .button--ghost {
-  border: 1px solid rgba(97, 184, 190, 0.22);
-  background: rgba(248, 254, 255, 0.14);
-  color: #effcfd;
+  border: 1px solid rgba(98, 178, 182, 0.22);
+  background: rgba(255, 252, 248, 0.7);
+  color: var(--text);
 }
 
 .button--ghost:hover {
-  border-color: rgba(97, 184, 190, 0.42);
-  background: rgba(248, 254, 255, 0.2);
+  border-color: rgba(98, 178, 182, 0.42);
+  background: rgba(255, 252, 248, 0.92);
 }
 
 .button--text {
   padding: 0;
-  color: var(--warm);
+  color: var(--accent-deep);
   font-weight: 700;
   justify-content: flex-start;
 }
@@ -352,11 +354,15 @@ main {
 
 .hero {
   min-height: calc(100svh - 5.6rem);
-  padding: 4.5rem 0 3rem;
+  padding: 4rem 2rem 3.25rem;
   display: grid;
   grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
   gap: 2rem;
   align-items: center;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  border: 0;
 }
 
 .hero__content {
@@ -365,18 +371,27 @@ main {
 }
 
 .hero__eyebrow,
-.section-shell__eyebrow,
 .final-cta__eyebrow,
 .modal__eyebrow,
+.section-shell__eyebrow {
+  margin: 0 0 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.84rem;
+  font-weight: 800;
+  color: #d98567;
+  text-shadow: 0 1px 0 rgba(255, 248, 244, 0.55);
+}
+
 .contact-panel__label,
 .professional-card__role,
 .specialty-panel__heading p {
   margin: 0 0 0.85rem;
   text-transform: uppercase;
   letter-spacing: 0.14em;
-  font-size: 0.78rem;
+  font-size: 0.76rem;
   font-weight: 700;
-  color: rgba(218, 247, 249, 0.94);
+  color: #d89a81;
 }
 
 .hero h1,
@@ -384,28 +399,40 @@ main {
 .final-cta h2,
 .modal h2 {
   margin: 0;
-  font-family: 'Cormorant Garamond', serif;
-  line-height: 0.96;
-  letter-spacing: -0.04em;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-weight: 800;
+  line-height: 0.98;
+  letter-spacing: -0.05em;
 }
 
 .hero h1 {
-  color: #f4fdfe;
-  font-size: clamp(4.2rem, 9vw, 6.7rem);
+  color: #246475;
+  font-size: clamp(4rem, 8.8vw, 6.2rem);
+  max-width: 8.6ch;
 }
 
 .hero__subtitle {
   margin: 1.5rem 0 0;
-  font-size: clamp(1.15rem, 2vw, 1.55rem);
-  color: rgba(248, 254, 255, 0.98);
-  max-width: 32rem;
+  font-size: clamp(1.15rem, 2vw, 1.5rem);
+  color: #2f6270;
+  max-width: 30rem;
 }
 
 .hero__description {
   margin: 1.25rem 0 0;
   max-width: 31rem;
-  color: rgba(237, 249, 250, 0.92);
+  color: var(--muted);
   font-size: 1rem;
+}
+
+.hero .button--ghost {
+  color: var(--text);
+  border-color: rgba(98, 178, 182, 0.24);
+  background: rgba(255, 252, 248, 0.74);
+}
+
+.hero .button--ghost:hover {
+  background: rgba(255, 252, 248, 0.94);
 }
 
 .hero__actions {
@@ -431,7 +458,7 @@ main {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  color: rgba(242, 251, 252, 0.94);
+  color: var(--text);
 }
 
 .hero__notes li::before {
@@ -439,7 +466,7 @@ main {
   width: 0.75rem;
   height: 0.75rem;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--warm), var(--accent));
+  background: linear-gradient(135deg, #f5c0a8, #fff0e7);
   flex-shrink: 0;
 }
 
@@ -459,10 +486,10 @@ main {
   position: relative;
   overflow: hidden;
   background:
-    linear-gradient(160deg, rgba(242, 252, 253, 0.94), rgba(215, 239, 242, 0.82)),
-    linear-gradient(135deg, rgba(97, 184, 190, 0.16), rgba(127, 208, 199, 0.14));
+    linear-gradient(160deg, rgba(255, 252, 248, 0.96), rgba(232, 245, 243, 0.82)),
+    linear-gradient(135deg, rgba(255, 216, 201, 0.18), rgba(159, 217, 208, 0.14));
   box-shadow: var(--shadow);
-  border: 1px solid rgba(255, 255, 255, 0.45);
+  border: 1px solid rgba(255, 252, 248, 0.6);
 }
 
 .hero__visual-frame::before {
@@ -471,8 +498,8 @@ main {
   inset: 0;
   border-radius: calc(var(--radius-lg) - 0.6rem);
   background:
-    linear-gradient(180deg, rgba(14, 63, 75, 0.04), rgba(14, 63, 75, 0.24)),
-    radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.2), transparent 30%);
+    linear-gradient(180deg, rgba(32, 91, 102, 0.04), rgba(32, 91, 102, 0.2)),
+    radial-gradient(circle at 20% 20%, rgba(255, 253, 251, 0.24), transparent 30%);
   pointer-events: none;
 }
 
@@ -490,8 +517,8 @@ main {
   max-width: 20rem;
   padding: 1rem 1.1rem;
   border-radius: var(--radius-md);
-  background: rgba(252, 255, 255, 0.92);
-  box-shadow: 0 18px 38px rgba(62, 122, 128, 0.12);
+  background: rgba(255, 248, 241, 0.92);
+  box-shadow: 0 18px 36px rgba(109, 162, 165, 0.14);
 }
 
 .hero__visual-copy span,
@@ -502,7 +529,7 @@ main {
 .hero__visual-copy span {
   display: inline-block;
   margin-bottom: 0.7rem;
-  color: var(--warm);
+  color: #d78b6d;
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -510,9 +537,10 @@ main {
 
 .hero__visual-copy strong {
   display: block;
-  font-size: 1.25rem;
-  line-height: 1.1;
-  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  color: var(--text);
+  font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
 .section-shell {
@@ -522,6 +550,10 @@ main {
   max-width: 100%;
   min-width: 0;
   overflow-x: hidden;
+}
+
+.section-shell__aside {
+  align-self: start;
 }
 
 .section-shell__heading {
@@ -537,15 +569,15 @@ main {
 .section-shell__title {
   max-width: 46rem;
   font-size: clamp(2.8rem, 5vw, 4.4rem);
-  color: #f4fdfe;
-  text-shadow: 0 2px 18px rgba(7, 52, 64, 0.16);
+  color: #246475;
+  text-shadow: none;
   overflow-wrap: anywhere;
 }
 
 .section-shell__intro {
   max-width: 41rem;
   margin: 1rem 0 0;
-  color: rgba(236, 249, 250, 0.92);
+  color: var(--muted);
   overflow-wrap: anywhere;
 }
 
@@ -592,31 +624,48 @@ main {
 
 .support-story__points {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: 1fr;
   gap: 1rem;
   min-width: 0;
 }
 
 .support-point {
   border-radius: var(--radius-md);
-  padding: 1.2rem;
+  padding: 1.25rem 1.3rem;
   display: grid;
-  gap: 0.9rem;
-  align-content: end;
+  grid-template-columns: auto 1fr;
+  gap: 0.95rem;
+  align-items: start;
+  background:
+    linear-gradient(180deg, rgba(255, 249, 244, 0.96), rgba(247, 252, 250, 0.96));
 }
 
-.support-point__dot {
-  width: 2.1rem;
-  height: 2.1rem;
+.support-point__number {
+  width: 3rem;
+  height: 3rem;
   border-radius: 50%;
-  background: linear-gradient(135deg, rgba(97, 184, 190, 0.25), rgba(127, 208, 199, 0.55));
+  background: linear-gradient(135deg, #ffd9ca, #f7bba1);
+  color: #ffffff;
+  display: inline-grid;
+  place-items: center;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  box-shadow: 0 10px 18px rgba(230, 170, 142, 0.2);
 }
 
-.support-point p {
+.support-point__body h3 {
   margin: 0;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 1.15rem;
+  line-height: 1.2;
   color: var(--text);
-  font-weight: 700;
-  line-height: 1.25;
+}
+
+.support-point__body p {
+  margin: 0.45rem 0 0;
+  color: var(--muted);
+  line-height: 1.5;
 }
 
 .mission-grid,
@@ -644,7 +693,7 @@ main {
 .professional-card {
   border: 1px solid var(--border);
   background: var(--surface);
-  backdrop-filter: blur(16px);
+  backdrop-filter: blur(10px);
 }
 
 .mission-grid__text,
@@ -694,8 +743,9 @@ main {
 .contact-panel h3,
 .modal h3 {
   margin: 0;
-  font-family: 'Cormorant Garamond', serif;
-  line-height: 1.05;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-weight: 700;
+  line-height: 1.08;
   letter-spacing: -0.03em;
 }
 
@@ -719,16 +769,16 @@ main {
 
 .specialty-panel {
   min-height: 100%;
-  background: rgba(248, 253, 254, 0.98);
+  background: rgba(255, 251, 247, 0.98);
   backdrop-filter: none;
-  border-color: rgba(226, 243, 245, 0.92);
-  box-shadow: 0 22px 42px rgba(18, 82, 97, 0.12);
+  border-color: rgba(235, 229, 217, 0.92);
+  box-shadow: 0 20px 38px rgba(81, 141, 148, 0.1);
   min-width: 0;
 }
 
 .specialty-panel__media {
   margin: -1.6rem -1.6rem 1.2rem;
-  height: 14rem;
+  height: 16rem;
   border-radius: calc(var(--radius-md) - 0.2rem) calc(var(--radius-md) - 0.2rem) 1.2rem 1.2rem;
   overflow: hidden;
 }
@@ -784,18 +834,18 @@ main {
   position: relative;
   border-radius: calc(var(--radius-md) - 0.35rem);
   background:
-    radial-gradient(circle at top, rgba(255, 255, 255, 0.7), transparent 34%),
-    linear-gradient(180deg, rgba(97, 184, 190, 0.28), rgba(136, 198, 177, 0.26)),
-    linear-gradient(180deg, #eaf8f9 0%, #d7ebe8 100%);
+    radial-gradient(circle at top, rgba(255, 255, 255, 0.75), transparent 34%),
+    linear-gradient(180deg, rgba(255, 225, 212, 0.22), rgba(136, 198, 177, 0.22)),
+    linear-gradient(180deg, #fdf9f4 0%, #e2f0ee 100%);
   display: grid;
   place-items: center;
   text-align: center;
 }
 
 .professional-card__portrait {
-  min-height: 11rem;
+  min-height: 14rem;
   overflow: hidden;
-  aspect-ratio: 4 / 4.6;
+  aspect-ratio: 4 / 3.5;
 }
 
 .professional-card__portrait span,
@@ -836,9 +886,11 @@ main {
 
 .testimonial-card blockquote {
   margin: 0.9rem 0 1rem;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.7rem;
-  line-height: 1.15;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 1.55rem;
+  font-weight: 700;
+  line-height: 1.28;
+  color: var(--text);
 }
 
 .testimonial-card p {
@@ -851,8 +903,8 @@ main {
   align-items: center;
   border-radius: 999px;
   padding: 0.35rem 0.8rem;
-  background: rgba(97, 184, 190, 0.14);
-  color: var(--warm);
+  background: rgba(240, 167, 139, 0.14);
+  color: #d78b6d;
   font-size: 0.78rem;
   font-weight: 700;
 }
@@ -867,7 +919,7 @@ main {
 
 .contact-panel--location {
   background:
-    linear-gradient(180deg, rgba(247, 254, 255, 0.92), rgba(223, 242, 243, 0.86)),
+    linear-gradient(180deg, rgba(255, 251, 247, 0.96), rgba(234, 247, 244, 0.9)),
     rgba(247, 254, 255, 0.88);
 }
 
@@ -911,8 +963,8 @@ main {
   margin-top: 6rem;
   text-align: center;
   background:
-    radial-gradient(circle at top, rgba(255, 255, 255, 0.35), transparent 25%),
-    linear-gradient(160deg, rgba(223, 242, 243, 0.9), rgba(227, 244, 236, 0.9));
+    radial-gradient(circle at top, rgba(255, 250, 246, 0.6), transparent 25%),
+    linear-gradient(160deg, rgba(255, 240, 229, 0.94), rgba(230, 245, 241, 0.94));
 }
 
 .final-cta h2 {
@@ -938,6 +990,7 @@ main {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
+  background: rgba(255, 251, 247, 0.74);
 }
 
 .site-footer p,
@@ -1206,10 +1259,10 @@ main {
     padding: 0.6rem;
     border-radius: 24px;
     background:
-      linear-gradient(180deg, rgba(16, 86, 101, 0.98), rgba(32, 111, 127, 0.96));
+      linear-gradient(180deg, rgba(70, 151, 165, 0.98), rgba(79, 169, 176, 0.96));
     box-shadow:
-      0 24px 48px rgba(9, 48, 58, 0.24),
-      inset 0 1px 0 rgba(255, 255, 255, 0.1);
+      0 24px 48px rgba(61, 125, 138, 0.22),
+      inset 0 1px 0 rgba(255, 252, 248, 0.12);
   }
 
   .site-header__nav a {
@@ -1248,8 +1301,9 @@ main {
 
   .hero {
     grid-template-columns: 1fr;
-    padding-top: 1.8rem;
+    padding: 1.75rem 1.1rem 1.5rem;
     gap: 1.35rem;
+    border-radius: 0;
   }
 
   .hero__content {
@@ -1342,7 +1396,7 @@ main {
 
   .section-shell__title {
     font-size: clamp(1.85rem, 8.8vw, 2.55rem);
-    line-height: 1.02;
+    line-height: 1.08;
     max-width: 100%;
   }
 
@@ -1381,7 +1435,7 @@ main {
   }
 
   .professional-card__portrait {
-    min-height: 8rem;
+    min-height: 11rem;
   }
 
   .professional-card h4 {
@@ -1523,16 +1577,29 @@ main {
   .contact-panel__label,
   .professional-card__role,
   .specialty-panel__heading p {
-    font-size: 0.72rem;
-    letter-spacing: 0.11em;
+    letter-spacing: 0.12em;
+  }
+
+  .hero__eyebrow,
+  .section-shell__eyebrow,
+  .final-cta__eyebrow,
+  .modal__eyebrow {
+    font-size: 0.76rem;
+  }
+
+  .contact-panel__label,
+  .professional-card__role,
+  .specialty-panel__heading p {
+    font-size: 0.7rem;
   }
 
   .section-shell__title {
     font-size: clamp(1.65rem, 8.2vw, 2.2rem);
+    line-height: 1.08;
   }
 
   .section-shell__intro,
-  .support-point p,
+  .support-point__body p,
   .mission-grid__text p,
   .specialty-panel__summary,
   .specialty-panel li,

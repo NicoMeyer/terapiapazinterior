@@ -10,8 +10,8 @@ export function ContactSection({ contactInfo }: ContactSectionProps) {
     <SectionShell
       id="contacto"
       eyebrow="Contacto"
-      title="Un cierre simple para dar el siguiente paso."
-      intro="Dirección referencial, vías de contacto directas y un acceso claro al agendamiento."
+      title="Conversemos y veamos cuál puede ser un buen primer paso."
+      intro="Puedes escribirnos, llamar o revisar la ubicación referencial del centro para imaginar mejor el próximo contacto."
       aside={
         <a className="button button--ghost" href={contactInfo.mapsUrl} target="_blank" rel="noreferrer">
           Ver ubicación en Maps
@@ -22,11 +22,11 @@ export function ContactSection({ contactInfo }: ContactSectionProps) {
         <article className="contact-panel contact-panel--location">
           <p className="contact-panel__label">Dirección</p>
           <h3>{contactInfo.address}</h3>
-          <p>Ubicación referencial para esta primera versión visual del centro.</p>
+          <p>Dirección referencial para esta etapa visual. Más adelante puede complementarse con fotos reales del espacio.</p>
         </article>
 
         <article className="contact-panel">
-          <p className="contact-panel__label">Contacto directo</p>
+          <p className="contact-panel__label">Hablemos</p>
           <ul className="contact-details">
             <li>
               <span>Teléfono</span>
@@ -38,7 +38,7 @@ export function ContactSection({ contactInfo }: ContactSectionProps) {
             </li>
           </ul>
           <a className="button button--solid contact-panel__cta" href={contactInfo.bookingUrl} target="_blank" rel="noreferrer">
-            Solicitar orientación inicial
+            Agendar una primera orientación
           </a>
         </article>
       </div>

@@ -11,9 +11,9 @@ export function TestimonialsSection({ testimonials }: TestimonialsSectionProps) 
   return (
     <SectionShell
       id="testimonios"
-      eyebrow="Confianza"
-      title="Una referencia breve de cómo podría sentirse la experiencia."
-      intro="Testimonios de demostración para representar esta futura sección con un tono más editorial y liviano."
+      eyebrow="Familias"
+      title="Una experiencia que busca sentirse clara, amable y acompañada."
+      intro="Testimonios de demostración para representar cómo podría verse esta sección cuando el centro cuente con opiniones reales."
     >
       <div className="testimonials-list testimonials-list--featured">
         {featuredTestimonials.map((testimonial) => (
