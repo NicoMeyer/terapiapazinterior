@@ -101,7 +101,7 @@ export const specialties: Specialty[] = [
 export const professionals: Professional[] = [
   {
     id: 'camila-reyes',
-    name: 'Camila Reyes',
+    name: 'Ayline Quijada Saldía',
     specialtyId: 'ocupacional',
     role: 'Terapeuta Ocupacional',
     bioShort:
@@ -124,7 +124,7 @@ export const professionals: Professional[] = [
   },
   {
     id: 'valentina-herrera',
-    name: 'Valentina Herrera',
+    name: 'Anais Serraz',
     specialtyId: 'nutricion',
     role: 'Nutricionista',
     bioShort:
