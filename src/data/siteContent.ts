@@ -173,6 +173,52 @@ export const professionals: Professional[] = [
     photoAlt: 'Placeholder visual para el perfil profesional de Valentina Herrera.',
     contactCtaLabel: 'Consultar por Nutrición',
   },
+  {
+    id: 'sofia-morales',
+    name: 'Sofía Morales',
+    specialtyId: 'psicologia-infantil',
+    role: 'Psicóloga Infantil',
+    bioShort:
+      'Placeholder de una futura profesional enfocada en juego, regulación emocional y acompañamiento cercano a familias.',
+    bioFull:
+      'Sofía representa un futuro perfil profesional orientado a acompañar a niñas, niños y sus cuidadores en procesos emocionales, vinculares y de bienestar cotidiano. Su enfoque se imagina cercano, claro y muy apoyado en el juego y la escucha respetuosa.',
+    credentials: [
+      'Perfil placeholder para futura incorporación al equipo',
+      'Enfoque proyectado en psicología infantil y acompañamiento familiar',
+      'Referencia visual provisional para etapa de desarrollo',
+    ],
+    focusAreas: [
+      'Juego y expresión emocional',
+      'Orientación a familias y cuidadores',
+      'Acompañamiento en regulación y vínculo',
+    ],
+    photo: '/placeholders/professional-sofia.svg',
+    photoAlt: 'Placeholder visual para el perfil profesional de Sofía Morales.',
+    contactCtaLabel: 'Consultar por Psicología Infantil',
+  },
+  {
+    id: 'martina-rojas',
+    name: 'Martina Rojas',
+    specialtyId: 'fonoaudiologia',
+    role: 'Fonoaudióloga',
+    bioShort:
+      'Placeholder de una futura profesional para apoyar lenguaje, comunicación y participación con herramientas claras para casa.',
+    bioFull:
+      'Martina representa un futuro perfil profesional dedicado a procesos de comunicación, lenguaje y participación cotidiana. La propuesta es una mirada amable y práctica, con estrategias simples para acompañar también fuera de la consulta.',
+    credentials: [
+      'Perfil placeholder para futura incorporación al equipo',
+      'Enfoque proyectado en lenguaje, comunicación y trabajo con familias',
+      'Referencia visual provisional para etapa de desarrollo',
+    ],
+    focusAreas: [
+      'Lenguaje y comunicación funcional',
+      'Apoyo a familias en estrategias cotidianas',
+      'Participación y juego compartido',
+    ],
+    photo: '/placeholders/professional-martina.svg',
+    photoAlt: 'Placeholder visual para el perfil profesional de Martina Rojas.',
+    contactCtaLabel: 'Consultar por Fonoaudiología',
+  },
 ];
 
 export const testimonials: Testimonial[] = [

@@ -38,6 +38,8 @@ html {
   overflow-x: hidden;
   overflow-y: auto;
   overscroll-behavior-x: none;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 body {
@@ -58,6 +60,18 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
   overscroll-behavior-x: none;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+#root::-webkit-scrollbar,
+.page-shell::-webkit-scrollbar,
+main::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
 }
 
 a {
@@ -100,6 +114,8 @@ button {
   background: transparent;
   overflow-x: hidden;
   overflow-y: visible;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .page-shell {
@@ -108,6 +124,8 @@ button {
   overflow-y: visible;
   width: 100%;
   max-width: 100%;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .page-shell__ambient {
@@ -355,6 +373,8 @@ main {
   max-width: calc(100% - (var(--page-gutter) * 2));
   overflow-x: hidden;
   overflow-y: visible;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .hero {
@@ -892,6 +912,12 @@ main {
   border-radius: var(--radius-md);
   padding: 1.3rem;
   min-width: 0;
+  transition:
+    transform 220ms ease,
+    box-shadow 220ms ease,
+    border-color 220ms ease,
+    background-color 220ms ease;
+  transform-origin: center;
 }
 
 .professional-card--visual {
@@ -917,6 +943,13 @@ main {
   min-height: 14rem;
   overflow: hidden;
   aspect-ratio: 4 / 3.5;
+}
+
+.professional-card__portrait img {
+  transition:
+    transform 320ms ease,
+    filter 320ms ease;
+  transform-origin: center;
 }
 
 .professional-card__portrait span,
@@ -945,6 +978,29 @@ main {
 
 .professional-card h4 {
   font-size: 2rem;
+}
+
+.professional-card--interactive:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 26px 44px rgba(81, 141, 148, 0.14);
+  border-color: rgba(181, 210, 206, 0.92);
+}
+
+.professional-card--interactive:hover .professional-card__portrait img {
+  transform: scale(1.035);
+  filter: saturate(1.04);
+}
+
+.professional-card--interactive:focus-within,
+.professional-card--interactive:focus-visible {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 40px rgba(81, 141, 148, 0.13);
+  border-color: rgba(171, 198, 167, 0.9);
+}
+
+.professional-card--interactive:active {
+  transform: translateY(1px) scale(0.992);
+  box-shadow: 0 14px 26px rgba(81, 141, 148, 0.1);
 }
 
 .testimonials-list {
@@ -1277,7 +1333,6 @@ main {
   }
 
   .testimonials-list,
-  .team-grid,
   .modal__grid {
     grid-template-columns: 1fr;
   }
@@ -1330,6 +1385,10 @@ main {
 
 @media (max-width: 840px) {
   .specialties-list {
+    grid-template-columns: 1fr;
+  }
+
+  .team-grid {
     grid-template-columns: 1fr;
   }
 }
