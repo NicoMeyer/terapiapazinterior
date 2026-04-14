@@ -16,9 +16,9 @@ export const heroContent = {
   eyebrow: 'Acompañamiento para familias',
   title: 'Terapia Paz Interior',
   subtitle:
-    'Terapia Ocupacional y Nutrición para acompañar a niñas, niños y sus familias con cercanía y calma.',
+    'Atención para niñas, niños y sus familias, con orientación clara desde el primer contacto.',
   description:
-    'Un centro pensado para orientar desde el primer contacto, transformar dudas en pasos posibles y ofrecer un espacio amable para crecer, jugar y avanzar.',
+    'Terapia Ocupacional y Nutrición en un espacio amable para acompañar, ordenar dudas y empezar con calma.',
   primaryCta: {
     label: 'Agendar orientación',
     href: 'https://www.google.cl',
