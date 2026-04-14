@@ -413,9 +413,9 @@ main {
 .specialty-panel__heading p {
   margin: 0 0 0.85rem;
   text-transform: uppercase;
-  letter-spacing: 0.14em;
-  font-size: 0.76rem;
-  font-weight: 700;
+  letter-spacing: 0.08em;
+  font-size: 1.3rem;
+  font-weight: 800;
   color: var(--warm);
 }
 
@@ -977,7 +977,8 @@ main {
 }
 
 .professional-card h4 {
-  font-size: 2rem;
+  font-size: 1.38rem;
+  line-height: 1.14;
 }
 
 .professional-card--interactive:hover {
@@ -1673,7 +1674,7 @@ main {
   }
 
   .professional-card h4 {
-    font-size: 1.5rem;
+    font-size: 1.18rem;
   }
 
   .testimonials-list {
@@ -1841,7 +1842,7 @@ main {
   .contact-panel__label,
   .professional-card__role,
   .specialty-panel__heading p {
-    font-size: 0.7rem;
+    font-size: 0.96rem;
   }
 
   .section-shell__title {
@@ -1874,7 +1875,7 @@ main {
   }
 
   .professional-card h4 {
-    font-size: 1.35rem;
+    font-size: 1.08rem;
   }
 
   .hero__visual-frame {
