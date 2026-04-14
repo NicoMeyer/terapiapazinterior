@@ -6,7 +6,12 @@ type FooterProps = {
 export function Footer({ statement, legal }: FooterProps) {
   return (
     <footer className="site-footer">
-      <p>{statement}</p>
+      <div className="site-footer__brand">
+        <div className="site-footer__mark">
+          <img src="/logo.png" alt="Logo de Terapia Paz Interior" />
+        </div>
+        <p>{statement}</p>
+      </div>
       <span>{legal}</span>
     </footer>
   );

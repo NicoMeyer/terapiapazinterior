@@ -44,7 +44,7 @@ export function Header({ navItems, bookingUrl }: HeaderProps) {
         <div className="site-header__brand">
           <div className="site-header__mark">
             <img
-              src="/photo.jpg"
+              src="/logo.png"
               alt="Logo de Terapia Paz Interior"
             />
           </div>
