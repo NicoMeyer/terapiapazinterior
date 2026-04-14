@@ -1,10 +1,11 @@
 export type Specialty = {
-  id: 'ocupacional' | 'nutricion';
+  id: string;
   name: string;
   summary: string;
   highlights: string[];
   image: string;
   imageAlt: string;
+  statusLabel?: string;
 };
 
 export type Professional = {

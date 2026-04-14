@@ -791,6 +791,7 @@ main {
   box-shadow: none !important;
   backdrop-filter: none !important;
   min-width: 0;
+  align-items: stretch;
 }
 
 .specialty-panel {
@@ -800,6 +801,14 @@ main {
   border-color: rgba(235, 229, 217, 0.92);
   box-shadow: 0 20px 38px rgba(81, 141, 148, 0.1);
   min-width: 0;
+  display: flex;
+  flex-direction: column;
+  transform-origin: center;
+  transition:
+    transform 220ms ease,
+    box-shadow 220ms ease,
+    border-color 220ms ease,
+    background-color 220ms ease;
 }
 
 .specialty-panel__media {
@@ -809,10 +818,23 @@ main {
   overflow: hidden;
 }
 
+.specialty-panel__media img {
+  transition:
+    transform 320ms ease,
+    filter 320ms ease;
+  transform-origin: center;
+}
+
 .specialty-panel__heading {
   display: flex;
-  align-items: baseline;
+  align-items: flex-start;
   gap: 1rem;
+}
+
+.specialty-panel__title-group {
+  display: grid;
+  gap: 0.6rem;
+  min-width: 0;
 }
 
 .specialty-panel__summary {
@@ -831,6 +853,29 @@ main {
 .specialty-panel li,
 .modal li {
   color: var(--muted);
+}
+
+.specialty-panel--interactive:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 26px 44px rgba(81, 141, 148, 0.14);
+  border-color: rgba(181, 210, 206, 0.92);
+}
+
+.specialty-panel--interactive:hover .specialty-panel__media img {
+  transform: scale(1.035);
+  filter: saturate(1.04);
+}
+
+.specialty-panel--interactive:focus-visible,
+.specialty-panel--interactive:focus-within {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 40px rgba(81, 141, 148, 0.13);
+  border-color: rgba(171, 198, 167, 0.9);
+}
+
+.specialty-panel--interactive:active {
+  transform: translateY(1px) scale(0.992);
+  box-shadow: 0 14px 26px rgba(81, 141, 148, 0.1);
 }
 
 .team-grid {
@@ -1231,7 +1276,6 @@ main {
     max-width: none;
   }
 
-  .specialties-list,
   .testimonials-list,
   .team-grid,
   .modal__grid {
@@ -1281,6 +1325,12 @@ main {
   .site-header__nav a {
     padding-inline: 0.82rem;
     font-size: 0.86rem;
+  }
+}
+
+@media (max-width: 840px) {
+  .specialties-list {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -1523,6 +1573,15 @@ main {
   .mission-grid__principles article,
   .support-point {
     padding: 1.1rem;
+  }
+
+  .specialty-panel__media {
+    margin: -1.1rem -1.1rem 1rem;
+    height: 13.6rem;
+  }
+
+  .specialty-panel__title-group {
+    gap: 0.45rem;
   }
 
   .support-story {

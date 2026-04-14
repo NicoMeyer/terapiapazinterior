@@ -96,6 +96,34 @@ export const specialties: Specialty[] = [
     imageAlt:
       'Escena referencial de nutrición con alimentos frescos, conversación cercana y un ambiente claro.',
   },
+  {
+    id: 'psicologia-infantil',
+    name: 'Psicología Infantil',
+    summary:
+      'Placeholder de una futura área para acompañar emociones, vínculo y bienestar en la vida cotidiana.',
+    highlights: [
+      'Espacio futuro para juego, escucha y regulación emocional',
+      'Acompañamiento orientado a niñas, niños y sus cuidadores',
+    ],
+    image: '/placeholders/specialty-psicologia.svg',
+    imageAlt:
+      'Escena referencial de una futura especialidad de psicología infantil con materiales de juego y un ambiente contenedor.',
+    statusLabel: 'Próximamente',
+  },
+  {
+    id: 'fonoaudiologia',
+    name: 'Fonoaudiología',
+    summary:
+      'Placeholder de una futura área para apoyar comunicación, lenguaje y participación con orientación clara para familias.',
+    highlights: [
+      'Trabajo futuro en comunicación, lenguaje y juego compartido',
+      'Estrategias simples para acompañar también fuera de la consulta',
+    ],
+    image: '/placeholders/specialty-fonoaudiologia.svg',
+    imageAlt:
+      'Escena referencial de una futura especialidad de fonoaudiología infantil con recursos visuales y acompañamiento cercano.',
+    statusLabel: 'Próximamente',
+  },
 ];
 
 export const professionals: Professional[] = [
