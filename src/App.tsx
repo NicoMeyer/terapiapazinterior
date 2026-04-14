@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import {
   contactInfo,
   footerContent,
@@ -11,6 +11,7 @@ import {
 } from './data/siteContent';
 import { ContactSection } from './components/ContactSection';
 import { FinalCtaSection } from './components/FinalCtaSection';
+import { FloatingBookingButton } from './components/FloatingBookingButton';
 import { Footer } from './components/Footer';
 import { Header } from './components/Header';
 import { HeroSection } from './components/HeroSection';
@@ -23,10 +24,33 @@ import type { Professional } from './types/content';
 
 function App() {
   const [selectedProfessional, setSelectedProfessional] = useState<Professional | null>(null);
+  const [showFloatingBookingButton, setShowFloatingBookingButton] = useState(false);
 
   const selectedSpecialty = specialties.find(
     (specialty) => specialty.id === selectedProfessional?.specialtyId,
   );
+
+  useEffect(() => {
+    const heroSection = document.getElementById('inicio');
+
+    if (!heroSection) {
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setShowFloatingBookingButton(!entry.isIntersecting);
+      },
+      {
+        threshold: 0.18,
+        rootMargin: '-120px 0px 0px 0px',
+      },
+    );
+
+    observer.observe(heroSection);
+
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <div className="page-shell">
@@ -50,6 +74,11 @@ function App() {
       </main>
 
       <Footer statement={footerContent.statement} legal={footerContent.legal} />
+
+      <FloatingBookingButton
+        bookingUrl={contactInfo.bookingUrl}
+        isVisible={showFloatingBookingButton}
+      />
 
       {selectedProfessional && selectedSpecialty ? (
         <ProfessionalModal
