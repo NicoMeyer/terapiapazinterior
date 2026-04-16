@@ -241,11 +241,11 @@ export const testimonials: Testimonial[] = [
 ];
 
 export const contactInfo: ContactInfo = {
-  address: 'Av. Providencia 1234, Oficina 508, Providencia, Santiago (dirección referencial)',
-  mapsUrl: 'https://maps.google.com/?q=Providencia+Santiago',
-  phone: '+56 9 1234 5678',
-  email: 'contacto@terapiapazinterior.cl',
-  bookingUrl: 'https://www.google.cl',
+  address: 'Av. Diego Portales 06382, 8171122 Puente Alto, Región Metropolitana',
+  mapsUrl: 'https://maps.app.goo.gl/6BUQGdPUSdgsNKnN8',
+  phone: '+569 36882312',
+  email: 'centroterapiapazinterior@gmail.com',
+  bookingUrl: 'https://www.te-conecta.com/centros/terapia-paz-interior',
 };
 
 export const footerContent = {
