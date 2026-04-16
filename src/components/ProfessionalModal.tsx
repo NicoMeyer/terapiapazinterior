@@ -88,7 +88,6 @@ export function ProfessionalModal({
           ) : (
             <span>{professional.name.split(' ').map((part) => part[0]).slice(0, 2).join('')}</span>
           )}
-          <p>Perfil referencial del equipo profesional</p>
         </div>
 
         <div className="modal__content">

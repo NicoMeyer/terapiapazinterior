@@ -354,6 +354,14 @@ main,
   justify-content: flex-start;
 }
 
+.professional-card .button--text {
+  color: var(--warm-deep);
+}
+
+.professional-card .button--text:hover {
+  color: var(--warm);
+}
+
 .button--header {
   white-space: nowrap;
   padding-inline: 1.8rem;
@@ -976,9 +984,32 @@ main {
   min-width: 0;
 }
 
+.professional-card__title-group {
+  display: grid;
+  gap: 0.55rem;
+  min-width: 0;
+}
+
+.professional-card__future-state {
+  margin-top: 0.55rem;
+}
+
+.professional-card__future-state h4 {
+  font-size: clamp(1.7rem, 3vw, 2.2rem);
+  line-height: 1.02;
+  color: var(--warm-deep);
+}
+
 .professional-card h4 {
   font-size: 1.38rem;
   line-height: 1.14;
+}
+
+.professional-card:has(.tag) .professional-card__portrait img {
+  object-fit: contain;
+  object-position: center;
+  padding: 1rem;
+  background: linear-gradient(180deg, rgba(255, 252, 248, 0.66), rgba(232, 245, 241, 0.72));
 }
 
 .professional-card--interactive:hover {
@@ -1905,6 +1936,11 @@ main {
 
   .professional-card h4 {
     font-size: 1.08rem;
+  }
+
+  .professional-card__future-state h4 {
+    font-size: 1.45rem;
+    line-height: 1.06;
   }
 
   .contact-panel__address {

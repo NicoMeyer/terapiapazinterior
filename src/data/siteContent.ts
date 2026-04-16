@@ -97,8 +97,8 @@ export const specialties: Specialty[] = [
       'Escena referencial de nutrición con alimentos frescos, conversación cercana y un ambiente claro.',
   },
   {
-    id: 'psicologia-infantil',
-    name: 'Psicología Infantil',
+    id: 'psicologia',
+    name: 'Psicología',
     summary:
       'Placeholder de una futura área para acompañar emociones, vínculo y bienestar en la vida cotidiana.',
     highlights: [
@@ -128,7 +128,7 @@ export const specialties: Specialty[] = [
 
 export const professionals: Professional[] = [
   {
-    id: 'camila-reyes',
+    id: 'ayline-quijada',
     name: 'Ayline Quijada Saldía',
     specialtyId: 'ocupacional',
     role: 'Terapeuta Ocupacional',
@@ -146,13 +146,13 @@ export const professionals: Professional[] = [
       'Rutinas, juego y participación escolar',
       'Orientación a familias y adaptación de entornos',
     ],
-    photo: '/placeholders/professional-camila.svg',
-    photoAlt: 'Placeholder visual para el perfil profesional de Camila Reyes.',
+    photo: '/profesionals/to.jpg',
+    photoAlt: 'Foto profesional de Ayline Quijada.',
     contactCtaLabel: 'Consultar por Terapia Ocupacional',
   },
   {
-    id: 'valentina-herrera',
-    name: 'Anais Serraz',
+    id: 'anais-erraz',
+    name: 'Anais Erraz',
     specialtyId: 'nutricion',
     role: 'Nutricionista',
     bioShort:
@@ -169,15 +169,15 @@ export const professionals: Professional[] = [
       'Educación nutricional para familias',
       'Orientación práctica para bienestar integral',
     ],
-    photo: '/placeholders/professional-valentina.svg',
-    photoAlt: 'Placeholder visual para el perfil profesional de Valentina Herrera.',
+    photo: '/profesionals/nutri.jpeg',
+    photoAlt: 'Foto profesional de Anais Erraz.',
     contactCtaLabel: 'Consultar por Nutrición',
   },
   {
     id: 'sofia-morales',
     name: 'Sofía Morales',
-    specialtyId: 'psicologia-infantil',
-    role: 'Psicóloga Infantil',
+    specialtyId: 'psicologia',
+    role: 'Psicóloga',
     bioShort:
       'Placeholder de una futura profesional enfocada en juego, regulación emocional y acompañamiento cercano a familias.',
     bioFull:
@@ -192,9 +192,10 @@ export const professionals: Professional[] = [
       'Orientación a familias y cuidadores',
       'Acompañamiento en regulación y vínculo',
     ],
-    photo: '/placeholders/professional-sofia.svg',
+    photo: '/placeholders/specialty-psicologia.svg',
     photoAlt: 'Placeholder visual para el perfil profesional de Sofía Morales.',
-    contactCtaLabel: 'Consultar por Psicología Infantil',
+    contactCtaLabel: 'Consultar por Psicología',
+    statusLabel: 'Próximamente',
   },
   {
     id: 'martina-rojas',
@@ -215,9 +216,10 @@ export const professionals: Professional[] = [
       'Apoyo a familias en estrategias cotidianas',
       'Participación y juego compartido',
     ],
-    photo: '/placeholders/professional-martina.svg',
+    photo: '/placeholders/specialty-fonoaudiologia.svg',
     photoAlt: 'Placeholder visual para el perfil profesional de Martina Rojas.',
     contactCtaLabel: 'Consultar por Fonoaudiología',
+    statusLabel: 'Próximamente',
   },
 ];
 

@@ -40,15 +40,27 @@ function ProfessionalCard({
       </div>
       <div className="professional-card__body">
         <p className="professional-card__role">{specialtyName}</p>
-        <h4>{professional.name}</h4>
-        <p>{professional.bioShort}</p>
-        <button
-          type="button"
-          className="button button--text"
-          onClick={() => onSelectProfessional(professional)}
-        >
-          Ver perfil completo
-        </button>
+        {professional.statusLabel ? (
+          <div className="professional-card__future-state">
+            <h4>{professional.statusLabel}</h4>
+          </div>
+        ) : (
+          <>
+            <div className="professional-card__title-group">
+              <h4>{professional.name}</h4>
+            </div>
+            <p>{professional.bioShort}</p>
+          </>
+        )}
+        {professional.statusLabel ? null : (
+          <button
+            type="button"
+            className="button button--text"
+            onClick={() => onSelectProfessional(professional)}
+          >
+            Ver perfil completo
+          </button>
+        )}
       </div>
     </article>
   );

@@ -20,6 +20,7 @@ export type Professional = {
   photo: string | null;
   photoAlt: string;
   contactCtaLabel: string;
+  statusLabel?: string;
 };
 
 export type Testimonial = {
