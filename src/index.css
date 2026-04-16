@@ -354,14 +354,6 @@ main,
   justify-content: flex-start;
 }
 
-.professional-card .button--text {
-  color: var(--warm-deep);
-}
-
-.professional-card .button--text:hover {
-  color: var(--warm);
-}
-
 .button--header {
   white-space: nowrap;
   padding-inline: 1.8rem;
@@ -932,6 +924,12 @@ main {
   grid-template-columns: 1fr;
   gap: 1rem;
   padding: 1rem;
+}
+
+.professional-card--button {
+  width: 100%;
+  text-align: left;
+  color: inherit;
 }
 
 .professional-card__portrait,

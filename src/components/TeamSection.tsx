@@ -22,15 +22,15 @@ function ProfessionalCard({
   onSelectProfessional,
 }: ProfessionalCardProps) {
   const { ref, isVisible } = useRevealOnScroll<HTMLElement>();
-
-  return (
-    <article
-      ref={ref}
-      className={`professional-card professional-card--visual professional-card--interactive reveal${
-        isVisible ? ' is-visible' : ''
-      }`}
-      style={{ transitionDelay: `${index * 90}ms` }}
-    >
+  const setCardRef = (node: HTMLElement | null) => {
+    ref.current = node;
+  };
+  const cardClassName = `professional-card professional-card--visual professional-card--interactive reveal${
+    isVisible ? ' is-visible' : ''
+  }`;
+  const cardStyle = { transitionDelay: `${index * 90}ms` };
+  const cardContent = (
+    <>
       <div className="professional-card__portrait">
         {professional.photo ? (
           <img src={professional.photo} alt={professional.photoAlt} loading="lazy" />
@@ -52,17 +52,29 @@ function ProfessionalCard({
             <p>{professional.bioShort}</p>
           </>
         )}
-        {professional.statusLabel ? null : (
-          <button
-            type="button"
-            className="button button--text"
-            onClick={() => onSelectProfessional(professional)}
-          >
-            Ver perfil completo
-          </button>
-        )}
       </div>
-    </article>
+    </>
+  );
+
+  if (professional.statusLabel) {
+    return (
+      <article ref={ref} className={cardClassName} style={cardStyle}>
+        {cardContent}
+      </article>
+    );
+  }
+
+  return (
+    <button
+      ref={setCardRef}
+      type="button"
+      className={`${cardClassName} professional-card--button`}
+      style={cardStyle}
+      onClick={() => onSelectProfessional(professional)}
+      aria-label={`Ver perfil completo de ${professional.name}`}
+    >
+      {cardContent}
+    </button>
   );
 }
 

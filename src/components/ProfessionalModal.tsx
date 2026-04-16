@@ -91,9 +91,7 @@ export function ProfessionalModal({
         </div>
 
         <div className="modal__content">
-          <p className="modal__eyebrow">
-            {professional.role} · {specialtyName}
-          </p>
+          <p className="modal__eyebrow">{specialtyName}</p>
           <h2 id="professional-modal-title">{professional.name}</h2>
           <p className="modal__summary">{professional.bioFull}</p>
 
