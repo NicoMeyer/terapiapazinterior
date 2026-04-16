@@ -21,8 +21,14 @@ export function ContactSection({ contactInfo }: ContactSectionProps) {
       <div className="contact-layout contact-layout--compact">
         <article className="contact-panel contact-panel--location">
           <p className="contact-panel__label">Dirección</p>
-          <h3>{contactInfo.address}</h3>
-          <p>Dirección referencial para esta etapa visual. Más adelante puede complementarse con fotos reales del espacio.</p>
+          <div className="contact-panel__location-image">
+            <img
+              src="/location.png"
+              alt="Vista referencial de la ubicación y entorno del centro Terapia Paz Interior."
+              loading="lazy"
+            />
+          </div>
+          <p className="contact-panel__address">{contactInfo.address}</p>
         </article>
 
         <article className="contact-panel">

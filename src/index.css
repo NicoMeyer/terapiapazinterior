@@ -1038,7 +1038,7 @@ main {
 }
 
 .contact-layout {
-  grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+  grid-template-columns: minmax(0, 0.98fr) minmax(320px, 1.02fr);
 }
 
 .contact-layout--compact {
@@ -1049,6 +1049,31 @@ main {
   background:
     linear-gradient(180deg, rgba(255, 251, 247, 0.96), rgba(234, 247, 244, 0.9)),
     rgba(247, 254, 255, 0.88);
+}
+
+.contact-panel__location-image {
+  margin-top: 0.4rem;
+  border-radius: calc(var(--radius-md) - 0.15rem);
+  overflow: hidden;
+  min-height: 17.5rem;
+  box-shadow: 0 18px 34px rgba(79, 140, 149, 0.12);
+  background: rgba(255, 252, 248, 0.72);
+}
+
+.contact-panel__location-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+.contact-panel__address {
+  margin: 1rem 0 0;
+  font-size: 0.98rem;
+  line-height: 1.55;
+  font-weight: 600;
+  color: rgba(44, 87, 97, 0.92);
 }
 
 .contact-panel h3 {
@@ -1662,6 +1687,10 @@ main {
     gap: 0.75rem;
   }
 
+  .contact-panel__location-image {
+    min-height: 15rem;
+  }
+
   .professional-card {
     grid-template-columns: 1fr;
     gap: 1rem;
@@ -1876,6 +1905,11 @@ main {
 
   .professional-card h4 {
     font-size: 1.08rem;
+  }
+
+  .contact-panel__address {
+    font-size: 0.9rem;
+    line-height: 1.5;
   }
 
   .hero__visual-frame {
