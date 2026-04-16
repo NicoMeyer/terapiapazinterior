@@ -1105,6 +1105,19 @@ main {
   color: rgba(44, 87, 97, 0.92);
 }
 
+.contact-panel__note {
+  margin: 0.45rem 0 0;
+  padding-left: 0.75rem;
+  border-left: 3px solid rgba(138, 198, 79, 0.45);
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.contact-panel__note--right {
+  margin-top: 1.2rem;
+}
+
 .contact-panel h3 {
   font-size: clamp(2rem, 4vw, 3.1rem);
 }
@@ -1139,6 +1152,66 @@ main {
 .contact-panel__cta {
   margin-top: 1.4rem;
   width: 100%;
+}
+
+.contact-panel__maps-link {
+  margin-top: 1.4rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.9rem;
+  align-items: center;
+  padding: 0.9rem 1rem;
+  border: 1px solid rgba(138, 198, 79, 0.3);
+  border-radius: 1.3rem;
+  background:
+    linear-gradient(135deg, rgba(138, 198, 79, 0.13), rgba(255, 255, 255, 0.88));
+  color: var(--text);
+  font-weight: 800;
+  text-decoration: none;
+  box-shadow: 0 14px 28px rgba(111, 170, 53, 0.12);
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    background 180ms ease;
+}
+
+.contact-panel__maps-link:hover,
+.contact-panel__maps-link:focus-visible {
+  transform: translateY(-2px);
+  border-color: rgba(138, 198, 79, 0.52);
+  background:
+    linear-gradient(135deg, rgba(138, 198, 79, 0.2), rgba(255, 255, 255, 0.96));
+  box-shadow: 0 18px 34px rgba(111, 170, 53, 0.18);
+}
+
+.contact-panel__maps-link:active {
+  transform: translateY(0) scale(0.99);
+}
+
+.contact-panel__maps-link small {
+  display: block;
+  margin-top: 0.18rem;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.contact-panel__maps-icon {
+  width: 2.85rem;
+  height: 2.85rem;
+  border-radius: 50%;
+  display: inline-grid;
+  place-items: center;
+  background: linear-gradient(135deg, var(--warm), var(--warm-deep));
+  color: #ffffff;
+  box-shadow: 0 12px 22px rgba(111, 170, 53, 0.22);
+}
+
+.contact-panel__maps-icon svg {
+  width: 1.45rem;
+  height: 1.45rem;
+  fill: currentColor;
 }
 
 .final-cta {
@@ -1944,6 +2017,10 @@ main {
   .contact-panel__address {
     font-size: 0.9rem;
     line-height: 1.5;
+  }
+
+  .contact-panel__note {
+    font-size: 0.84rem;
   }
 
   .hero__visual-frame {

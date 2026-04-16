@@ -135,7 +135,7 @@ export const professionals: Professional[] = [
     bioShort:
       'Acompaña juego, autonomía y rutinas con una mirada cercana, práctica y muy conectada con cada familia.',
     bioFull:
-      'Camila trabaja con niñas, niños y familias en procesos donde la organización diaria, la regulación y la participación ocupacional necesitan apoyo concreto. Su estilo combina observación clínica, escucha activa y estrategias que puedan trasladarse con naturalidad a la vida cotidiana.',
+      'Ayline trabaja con niñas, niños y familias en procesos donde la organización diaria, la regulación y la participación ocupacional necesitan apoyo concreto. Su estilo combina observación clínica, escucha activa y estrategias que puedan trasladarse con naturalidad a la vida cotidiana.',
     credentials: [
       'Licenciada en Ciencias de la Ocupación Humana',
       'Formación en integración sensorial y acompañamiento familiar',
@@ -158,7 +158,7 @@ export const professionals: Professional[] = [
     bioShort:
       'Entrega orientación nutricional amable y realista para ordenar la alimentación sin presiones ni culpas.',
     bioFull:
-      'Valentina acompaña a personas y familias que buscan ordenar su alimentación sin juicios ni fórmulas rígidas. Su trabajo se centra en construir cambios posibles de sostener, considerando objetivos de salud, historia alimentaria y la dinámica real del hogar.',
+      'Anais acompaña a personas y familias que buscan ordenar su alimentación sin juicios ni fórmulas rígidas. Su trabajo se centra en construir cambios posibles de sostener, considerando objetivos de salud, historia alimentaria y la dinámica real del hogar.',
     credentials: [
       'Nutricionista clínica titulada',
       'Formación en educación alimentaria y cambio de hábitos',
@@ -174,14 +174,14 @@ export const professionals: Professional[] = [
     contactCtaLabel: 'Consultar por Nutrición',
   },
   {
-    id: 'sofia-morales',
-    name: 'Sofía Morales',
+    id: 'psicologa',
+    name: 'Psicóloga',
     specialtyId: 'psicologia',
     role: 'Psicóloga',
     bioShort:
       'Placeholder de una futura profesional enfocada en juego, regulación emocional y acompañamiento cercano a familias.',
     bioFull:
-      'Sofía representa un futuro perfil profesional orientado a acompañar a niñas, niños y sus cuidadores en procesos emocionales, vinculares y de bienestar cotidiano. Su enfoque se imagina cercano, claro y muy apoyado en el juego y la escucha respetuosa.',
+      'Psicologa representa un futuro perfil profesional orientado a acompañar a niñas, niños y sus cuidadores en procesos emocionales, vinculares y de bienestar cotidiano. Su enfoque se imagina cercano, claro y muy apoyado en el juego y la escucha respetuosa.',
     credentials: [
       'Perfil placeholder para futura incorporación al equipo',
       'Enfoque proyectado en psicología infantil y acompañamiento familiar',
@@ -193,19 +193,19 @@ export const professionals: Professional[] = [
       'Acompañamiento en regulación y vínculo',
     ],
     photo: '/placeholders/specialty-psicologia.svg',
-    photoAlt: 'Placeholder visual para el perfil profesional de Sofía Morales.',
+    photoAlt: 'Placeholder visual para el perfil profesional de Psicóloga.',
     contactCtaLabel: 'Consultar por Psicología',
     statusLabel: 'Próximamente',
   },
   {
-    id: 'martina-rojas',
-    name: 'Martina Rojas',
+    id: 'fonoaudiologa',
+    name: 'Fonoaudióloga',
     specialtyId: 'fonoaudiologia',
     role: 'Fonoaudióloga',
     bioShort:
       'Placeholder de una futura profesional para apoyar lenguaje, comunicación y participación con herramientas claras para casa.',
     bioFull:
-      'Martina representa un futuro perfil profesional dedicado a procesos de comunicación, lenguaje y participación cotidiana. La propuesta es una mirada amable y práctica, con estrategias simples para acompañar también fuera de la consulta.',
+      'Fonoaudióloga representa un futuro perfil profesional dedicado a procesos de comunicación, lenguaje y participación cotidiana. La propuesta es una mirada amable y práctica, con estrategias simples para acompañar también fuera de la consulta.',
     credentials: [
       'Perfil placeholder para futura incorporación al equipo',
       'Enfoque proyectado en lenguaje, comunicación y trabajo con familias',
@@ -217,7 +217,7 @@ export const professionals: Professional[] = [
       'Participación y juego compartido',
     ],
     photo: '/placeholders/specialty-fonoaudiologia.svg',
-    photoAlt: 'Placeholder visual para el perfil profesional de Martina Rojas.',
+    photoAlt: 'Placeholder visual para el perfil profesional de Fonoaudióloga.',
     contactCtaLabel: 'Consultar por Fonoaudiología',
     statusLabel: 'Próximamente',
   },
