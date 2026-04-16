@@ -58,7 +58,7 @@ export function ProfessionalModal({
 
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
-      previouslyFocusedElementRef.current?.focus();
+      previouslyFocusedElementRef.current?.focus({ preventScroll: true });
     };
   }, [onClose]);
 
