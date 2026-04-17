@@ -54,12 +54,15 @@ function App() {
 
   return (
     <div className="page-shell">
+      <a className="skip-link" href="#contenido">
+        Saltar al contenido
+      </a>
       <div className="page-shell__ambient page-shell__ambient--one" aria-hidden="true" />
       <div className="page-shell__ambient page-shell__ambient--two" aria-hidden="true" />
 
       <Header navItems={navItems} bookingUrl={contactInfo.bookingUrl} />
 
-      <main>
+      <main id="contenido" tabIndex={-1}>
         <HeroSection {...heroContent} />
         <SupportSection content={supportContent} />
         <SpecialtiesSection specialties={specialties} />

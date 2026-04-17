@@ -18,10 +18,10 @@ export const heroContent = {
   subtitle:
     'Atención para niñas, niños y sus familias, con orientación clara desde el primer contacto.',
   description:
-    'Terapia Ocupacional y Nutrición en un espacio amable para acompañar, ordenar dudas y empezar con calma.',
+    'Centro de terapia en Puente Alto, cercano a La Florida, con Terapia Ocupacional y Nutrición para acompañar, ordenar dudas y empezar con calma.',
   primaryCta: {
     label: 'Agendar orientación',
-    href: 'https://www.google.cl',
+    href: 'https://www.te-conecta.com/centros/terapia-paz-interior',
   },
   secondaryCta: {
     label: 'Ver especialidades',
@@ -74,12 +74,12 @@ export const specialties: Specialty[] = [
     id: 'ocupacional',
     name: 'Terapia Ocupacional',
     summary:
-      'Apoyo para que niñas y niños participen con más seguridad en su juego, rutinas y vida diaria.',
+      'Terapia Ocupacional para que niñas, niños y adultos participen con más seguridad en su juego, rutinas y vida diaria.',
     highlights: [
       'Juego, autonomía y participación cotidiana',
       'Orientación práctica para familias y entorno',
     ],
-    image: '/placeholders/specialty-ocupacional.svg',
+    image: '/specialities/terapia.jpg',
     imageAlt:
       'Escena referencial de terapia ocupacional infantil con juego guiado, materiales sensoriales y acompañamiento cercano.',
   },
@@ -87,14 +87,15 @@ export const specialties: Specialty[] = [
     id: 'nutricion',
     name: 'Nutrición',
     summary:
-      'Acompañamiento nutricional amable para construir hábitos posibles y bienestar en familia.',
+      'Nutrición familiar amable para construir hábitos posibles y bienestar cotidiano sin presiones.',
     highlights: [
       'Orientación simple y sin juicios',
       'Cambios cotidianos que sí se pueden sostener',
     ],
-    image: '/placeholders/specialty-nutricion.svg',
+    image: '/specialities/nutri.jpg',
     imageAlt:
       'Escena referencial de nutrición con alimentos frescos, conversación cercana y un ambiente claro.',
+    designedBy: '<a href="http://www.freepik.com">Designed by rawpixel.com / Freepik</a>',
   },
   {
     id: 'psicologia',
@@ -105,7 +106,7 @@ export const specialties: Specialty[] = [
       'Espacio futuro para juego, escucha y regulación emocional',
       'Acompañamiento orientado a niñas, niños y sus cuidadores',
     ],
-    image: '/placeholders/specialty-psicologia.svg',
+    image: '/specialities/psicologia.jpg',
     imageAlt:
       'Escena referencial de una futura especialidad de psicología infantil con materiales de juego y un ambiente contenedor.',
     statusLabel: 'Próximamente',
@@ -119,7 +120,7 @@ export const specialties: Specialty[] = [
       'Trabajo futuro en comunicación, lenguaje y juego compartido',
       'Estrategias simples para acompañar también fuera de la consulta',
     ],
-    image: '/placeholders/specialty-fonoaudiologia.svg',
+    image: '/specialities/fono.jpg',
     imageAlt:
       'Escena referencial de una futura especialidad de fonoaudiología infantil con recursos visuales y acompañamiento cercano.',
     statusLabel: 'Próximamente',
@@ -192,7 +193,7 @@ export const professionals: Professional[] = [
       'Orientación a familias y cuidadores',
       'Acompañamiento en regulación y vínculo',
     ],
-    photo: '/placeholders/specialty-psicologia.svg',
+    photo: '/specialities/psicologia.jpg',
     photoAlt: 'Placeholder visual para el perfil profesional de Psicóloga.',
     contactCtaLabel: 'Consultar por Psicología',
     statusLabel: 'Próximamente',
@@ -216,7 +217,7 @@ export const professionals: Professional[] = [
       'Apoyo a familias en estrategias cotidianas',
       'Participación y juego compartido',
     ],
-    photo: '/placeholders/specialty-fonoaudiologia.svg',
+    photo: '/specialities/fono.jpg',
     photoAlt: 'Placeholder visual para el perfil profesional de Fonoaudióloga.',
     contactCtaLabel: 'Consultar por Fonoaudiología',
     statusLabel: 'Próximamente',
@@ -252,6 +253,6 @@ export const contactInfo: ContactInfo = {
 
 export const footerContent = {
   statement:
-    'Terapia Paz Interior propone una experiencia cálida, clara y profesional para niñas, niños y sus familias.',
-  legal: 'Contenido provisional para etapa inicial de desarrollo.',
+    'Terapia Paz Interior propone una experiencia cálida, clara y profesional para niñas, niños y sus familias. ¡Ven a visitarnos!',
+  legal: '',
 };

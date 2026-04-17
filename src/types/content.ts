@@ -6,6 +6,7 @@ export type Specialty = {
   image: string;
   imageAlt: string;
   statusLabel?: string;
+  designedBy?: string;
 };
 
 export type Professional = {

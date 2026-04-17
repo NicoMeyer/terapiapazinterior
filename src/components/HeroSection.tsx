@@ -66,7 +66,7 @@ export function HeroSection({
         </ul>
       </div>
 
-      <div className="hero__visual" aria-hidden="true">
+      <div className="hero__visual">
         <div className="hero__visual-frame">
           <img className="hero__image" src={image.src} alt={image.alt} />
           <div className="hero__visual-copy">

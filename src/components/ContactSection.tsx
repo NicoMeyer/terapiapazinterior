@@ -11,7 +11,7 @@ export function ContactSection({ contactInfo }: ContactSectionProps) {
       id="contacto"
       eyebrow="Contacto"
       title="Conversemos y veamos cuál puede ser un buen primer paso."
-      intro="Puedes escribirnos, llamar o revisar la ubicación referencial del centro para imaginar mejor el próximo contacto."
+      intro="Estamos ubicados en Puente Alto, con referencia cercana para familias de La Florida y comunas aledañas."
     >
       <div className="contact-layout contact-layout--compact">
         <article className="contact-panel contact-panel--location">
